@@ -201,7 +201,7 @@
             <Tooltip header={(data) => data.properties.name} />
           </Chart>
         </div>
-          <br>
+         
         <TooltipItem label="Number of Cases" value={data.size} />
         <TooltipItem label="Detention Eligible Cases Detained" value={data.detention_eligible_cases_detained}% />
         <TooltipItem label="Detention Petition Filed But Not Detained" value={data.detention_petition_filed_but_denied}% />
