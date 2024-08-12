@@ -11,10 +11,13 @@
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
+		"@rollup/plugin-dsv": "^3.0.4",
+		"@rollup/plugin-json": "^6.1.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/d3-array": "^3.2.1",
+		"@types/d3-force": "^3.0.10",
 		"@types/d3-scale": "^4.0.8",
 		"autoprefixer": "^10.4.19",
 		"postcss": "^8.4.38",
@@ -27,12 +30,23 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/public-sans": "^5.0.19",
+		"@fontsource-variable/space-grotesk": "^5.0.18",
+		"@fontsource/public-sans": "^5.0.18",
+		"@fontsource/space-grotesk": "^5.0.18",
+		"@fontsource/space-mono": "^5.0.20",
+		"@types/topojson-client": "^3.1.4",
 		"bits-ui": "^0.21.11",
 		"clsx": "^2.1.1",
 		"d3-array": "^3.2.4",
+		"d3-dsv": "^3.0.1",
+		"d3-force": "^3.0.0",
+		"d3-geo": "^3.1.1",
 		"d3-scale": "^4.0.2",
+		"d3-svg-annotation": "^2.5.1",
 		"layerchart": "^0.43.5",
 		"tailwind-merge": "^2.3.0",
-		"tailwind-variants": "^0.2.1"
+		"tailwind-variants": "^0.2.1",
+		"topojson-client": "^3.1.0"
 	}
 }
