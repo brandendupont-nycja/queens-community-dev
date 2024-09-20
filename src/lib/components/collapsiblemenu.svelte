@@ -51,12 +51,41 @@
          How Has Pretrial Hearing and Decision-Making Practice Changed Under the PFA?
       </a>
      </div>
-     <div class=" px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+     <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
        <a href="#anchor-eligible-detention-detained" on:click={handleAnchorClick}>
          Who is Eligible for Detention and Who is Being Detained Under the PFA?
       </a>
      </div>
+     <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-detention-release-changed" on:click={handleAnchorClick}>
+         How Have Detention and Release Rates Changed under the PFA?
+     </a>
+    </div>
+    <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-jail-pretrial-change" on:click={handleAnchorClick}>
+         How Have Jail and Pretrial Supervision Populations Changed Under the PFA?
+     </a>
+    </div>
+    <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-pretrial-supervision" on:click={handleAnchorClick}>
+         Pretrial Supervision
+     </a>
+    </div>
+    <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-electronic-monitoring" on:click={handleAnchorClick}>
+         Electronic Monitoring
+     </a>
+    </div>
+    <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-fta" on:click={handleAnchorClick}>
+         How Has Hearing Attendance Changed Under the PFA?
+     </a>
+    </div>
+    <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-crime" on:click={handleAnchorClick}>
+         What Can We Say About Crime and Public Safety Under the PFA So Far?
+     </a>
+    </div>
 
-     
     </Collapsible.Content>
    </Collapsible.Root>
