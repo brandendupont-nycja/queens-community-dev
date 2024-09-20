@@ -21,6 +21,6 @@
 	on:click
 	on:keydown
 >
-	[<slot />]
+	<slot />
 </ButtonPrimitive.Root>
 

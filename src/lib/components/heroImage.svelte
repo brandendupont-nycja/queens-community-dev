@@ -17,7 +17,7 @@ import logo from '$lib/assets/images/capitol.jpg';
         
         <div class="mt-10">
         <div class="mx-auto max-w-xl grid sm:text-left">
-          <h2 class="text-5xl text-white  md:text-5xl font-sans font-mono mb-6 ">
+          <h2 class="font-mono  text-5xl text-white  md:text-5xl font-sans mb-6 ">
             The First Year of the Pretrial Fairness Act
           </h2>
           <p class="text-gray-300">
@@ -32,7 +32,7 @@ import logo from '$lib/assets/images/capitol.jpg';
 
                  <dl class=" font-semibold ">
                    <dt class="sr-only">Name</dt>
-                   <dd class="text-white text-mono"> {author} ·  </dd>
+                   <dd class="text-white text-mono"> {author} · &nbsp;  </dd>
 
                    <dd>
 
@@ -60,7 +60,7 @@ import logo from '$lib/assets/images/capitol.jpg';
       <img
         alt="correctional image"
         src={logo }
-        class="h-[500px] w-full  sm:block hidden sm:h-[600px]"
+        class="h-[500px] w-full  sm:block hidden sm:h-[620px]"
       />
       <span class="text-white text-xs absolute bottom-2 right-2">{credit}</span>
       </div>

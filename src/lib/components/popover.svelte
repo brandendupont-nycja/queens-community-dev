@@ -2,7 +2,7 @@
     import { Button } from "$lib/components/ui/button/index.js";
     import * as Popover from "$lib/components/ui/popover/index.js";
     export let citationNumber
-   </script>
+</script>
     
    <Popover.Root portal={null}>
     <Popover.Trigger asChild let:builder>

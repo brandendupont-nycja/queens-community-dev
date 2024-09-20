@@ -8,10 +8,12 @@
   import { Text } from 'layerchart';
 
   import { Axis, Chart, Circle, ForceSimulation, Svg, Tooltip, TooltipItem, ChartClipPath, GeoPath,  Highlight  } from 'layerchart';
-  import HeroImage from "../lib/components/hero-image.svelte"
+  import HeroImage from "../lib/components/heroImage.svelte"
   import Block from './../lib/components/block.svelte';
   import TextBlock from './../lib/components/text.svelte';
   import PopOver from './../lib/components/popover.svelte';
+  import Menu from './../lib/components/collapsiblemenu.svelte';
+  
   import { Button } from "$lib/components/ui/button";
   import  data  from './detention-eligible-by-county-detention-eligible-by-county.csv';
   import geojson from './counties.json'
@@ -48,6 +50,14 @@
 
 <HeroImage />
 
+<div class="sticky top-[30vh]">
+  <Menu/>
+</div>
+
+<Block>
+
+  
+</Block>
 
 <Block>
   
@@ -75,11 +85,11 @@
   So how does it look so far?
 </TextBlock>
 <TextBlock>
-  We’ll continue to share findings, insights, and questions as they emerge. And in the meantime, where possible, we have worked with state and local agencies to make the data we are using for our evaluation accessible to the public through data tools on our website. <PopOver citationNumber={"1"} >For example, we collaborated with IDOC to develop a data dashboard tracking the number of people booked each month into <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/illinois-jail-population-tracker"}> county jails</a>. See <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/tracking-the-cook-county-jail-and-community-corrections-population"}>also</a>. </PopOver >
+  We’ll continue to share findings, insights, and questions as they emerge. And in the meantime, where possible, we have worked with state and local agencies to make the data we are using for our evaluation accessible to the public through data tools on our website. <PopOver citationNumber={"[1]"} >For example, we collaborated with IDOC to develop a data dashboard tracking the number of people booked each month into <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/illinois-jail-population-tracker"}> county jails</a>. See <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/tracking-the-cook-county-jail-and-community-corrections-population"}>also our Cook County Jail Tracker</a>. </PopOver >
 </TextBlock>
 
 
-<h2 class="text-4xl font-semibold">
+<h2 id="anchor-pfa-background" class="text-4xl font-semibold">
   PFA Background
 </h2>
 
