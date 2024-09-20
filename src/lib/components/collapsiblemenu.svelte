@@ -30,7 +30,7 @@
      </Collapsible.Trigger>
     </div>
     <Collapsible.Content class="space-y-2 text-white">
-    <div class="border-b border-t border-white px-4 py-2 font-mono text-xs">
+    <div class="border-b border-t border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
         
         <a href="#anchor-pfa-background" on:click={handleAnchorClick}>
             PFA Background
