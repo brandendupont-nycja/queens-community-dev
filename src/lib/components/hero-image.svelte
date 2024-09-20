@@ -21,7 +21,7 @@ import logo from '$lib/assets/images/capitol.jpg';
             The First Year of the Pretrial Fairness Act
           </h2>
           <p class="text-gray-300">
- Beginning September 18, 2023, the Pretrial Fairness Act fundamentally altered pretrial practices in Illinois. The law eliminated the use of cash bail in all criminal cases, prohibited pretrial detention altogether for most defendants, and established new and uniform processes, timelines and decision standards for pretrial detention and release hearings, among many other changes. What can we say about the workings and effects of the new law at the one-year point? 
+ Beginning September 18, 2023, the Pretrial Fairness Act fundamentally altered pretrial practices in Illinois. What can we say about the workings and effects of the new law at the one-year point? 
           </p>
           
           <span class="  font-semibold text-white mt-4"> </span> 
@@ -60,7 +60,7 @@ import logo from '$lib/assets/images/capitol.jpg';
       <img
         alt="correctional image"
         src={logo }
-        class="h-[500px] w-full  sm:block hidden sm:h-[800px]"
+        class="h-[500px] w-full  sm:block hidden sm:h-[600px]"
       />
       <span class="text-white text-xs absolute bottom-2 right-2">{credit}</span>
       </div>

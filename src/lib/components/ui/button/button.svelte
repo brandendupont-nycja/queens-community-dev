@@ -15,11 +15,12 @@
 
 <ButtonPrimitive.Root
 	{builders}
-	class={cn(buttonVariants({ variant, size, className }))}
+	class="inline-block  mr-1 text-sm font-bold tracking-wider text-main"
 	type="button"
 	{...$$restProps}
 	on:click
 	on:keydown
 >
-	<slot />
+	[<slot />]
 </ButtonPrimitive.Root>
+

@@ -3,6 +3,6 @@
 </script>
 
 
-<p class="font-sm text-gray-600  leading-8 ">
+<p class="font-sm text-gray-700  leading-8 ">
     <slot />
 </p>

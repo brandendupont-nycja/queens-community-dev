@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Link from './../lib/components/link.svelte'
   import { scaleOrdinal, scaleQuantile, scaleSqrt, scaleThreshold  } from 'd3-scale'; 
   import { geoMercator } from 'd3-geo';
   import { feature } from 'topojson-client';
@@ -10,6 +11,7 @@
   import HeroImage from "../lib/components/hero-image.svelte"
   import Block from './../lib/components/block.svelte';
   import TextBlock from './../lib/components/text.svelte';
+  import PopOver from './../lib/components/popover.svelte';
   import { Button } from "$lib/components/ui/button";
   import  data  from './detention-eligible-by-county-detention-eligible-by-county.csv';
   import geojson from './counties.json'
@@ -67,19 +69,23 @@
 
 
 <TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal
-  behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction
-  with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their
-  arrest.
+  And we know that this information, though provisional, is of vital interest to the public and the field.
 </TextBlock>
 <TextBlock>
   So how does it look so far?
 </TextBlock>
 <TextBlock>
-  Obviously, we have only our initial impressions at this point, based on 150-plus hearing observations—mostly in Cook County, but also in Lake, Winnebago, Kane, and McLean Counties. We do have a baseline for comparison, however, having made structured observations in about 140 bond court hearings under previous law, many in counties we’ve now had a chance to revisit. In addition, we are continuing to collect and analyze available data regarding jail and pretrial supervision populations and the outcomes of detention hearings, which serve to supplement our first-hand observations
+  We’ll continue to share findings, insights, and questions as they emerge. And in the meantime, where possible, we have worked with state and local agencies to make the data we are using for our evaluation accessible to the public through data tools on our website. <PopOver citationNumber={"1"} >For example, we collaborated with IDOC to develop a data dashboard tracking the number of people booked each month into <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/illinois-jail-population-tracker"}> county jails</a>. See <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/tracking-the-cook-county-jail-and-community-corrections-population"}>also</a>. </PopOver >
 </TextBlock>
 
+
+<h2 class="text-4xl font-semibold">
+  PFA Background
+</h2>
+
 </Block>
+
+
 
 
 <div id="chart-container" class="max-w-[1400px] mx-auto  mt-[100px]">
@@ -183,31 +189,6 @@
             }}
             let:tooltip
           >
-            <Svg>
-              <g>
-              {#each selectedCountiesFeatures as feature  (feature.id)}
-                {#if selectedStateFeature.properties.name === 'Henry'}
-                <GeoPath
-                id={feature.id}
-                geojson={feature}
-                fill={'#000000'}
-                {tooltip}
-              />
-              {/if}
-                <GeoPath
-                id={feature.id}
-                geojson={feature}
-                class="fill-surface-100 stroke-surface-content/10 hover:fill-surface-content/20"
-                {tooltip}
-              />
-            
-              {/each}
-              <GeoPath
-              geojson={selectedStateFeature}
-              class="fill-none stroke-surface-content pointer-events-none"
-            />
-          </g>
-            </Svg>
             <Tooltip header={(data) => data.properties.name} />
           </Chart>
         </div>
