@@ -1,10 +1,13 @@
 
 <script>
 
-const authors = ["Don Stemen","Dave Olson", 'Branden DuPont']
+const authors = ["Don Stemen","Dave Olson","Patrick Griffin","Amanda Ward", 'Branden DuPont', ]
 
 const credit ="Kevin Rajaram"
 const image_var ="https://images.unsplash.com/photo-1491832136260-6db1d35247e9?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+import logo from '$lib/assets/images/capitol.jpg';
+//import logo from '$lib/assets/images/pfa-report-image-2.png';
 </script>
 <div class="max-w-4xl  lg:max-w-full pb-[100px]" >
   
@@ -14,21 +17,22 @@ const image_var ="https://images.unsplash.com/photo-1491832136260-6db1d35247e9?q
         
         <div class="mt-10">
         <div class="mx-auto max-w-xl grid sm:text-left">
-          <h2 class="text-5xl text-white  md:text-6xl font-sans  mb-6 ">
-         In Illinois,<br> Counties Disagree on Detaining Detainable Offenses
+          <h2 class="text-5xl text-white  md:text-5xl font-sans font-mono mb-6 ">
+            The First Year of the Pretrial Fairness Act
           </h2>
           <p class="text-gray-300">
-            Across Illinois Counties the rate at which detainable offenses get detained varies widely.
+ Beginning September 18, 2023, the Pretrial Fairness Act fundamentally altered pretrial practices in Illinois. The law eliminated the use of cash bail in all criminal cases, prohibited pretrial detention altogether for most defendants, and established new and uniform processes, timelines and decision standards for pretrial detention and release hearings, among many other changes. What can we say about the workings and effects of the new law at the one-year point? 
           </p>
-          <ul class="flex flex-row sm:space-x-1 space-x-1 mt-4  ">
-
-            <span class="  font-semibold text-white ">By </span> 
+          
+          <span class="  font-semibold text-white mt-4"> </span> 
+          <ul class="flex flex-row  flex-wrap text-white ">
+            <li class="font-semibold text-white pr-1 ">By:</li> 
             {#each authors as author , i}
-               <li class=" " >
+               <li class="flex flex-wrap max-w-sm" >
 
                  <dl class=" font-semibold ">
                    <dt class="sr-only">Name</dt>
-                   <dd class="text-white text-mono">{author} · </dd>
+                   <dd class="text-white text-mono"> {author} ·  </dd>
 
                    <dd>
 
@@ -43,7 +47,7 @@ const image_var ="https://images.unsplash.com/photo-1491832136260-6db1d35247e9?q
                     <div class='mt-2'>
                       <dd class=" sm:text-md text-sm text-white ">
                         <time >
-                          Data Story Published: 6-9-2024
+                          Report Published: 9-19-2024
                         </time>
                       </dd>
                     </div>
@@ -55,8 +59,8 @@ const image_var ="https://images.unsplash.com/photo-1491832136260-6db1d35247e9?q
     <div class=''>
       <img
         alt="correctional image"
-        src={image_var}
-        class="h-76 w-full  sm:block hidden sm:h-svh"
+        src={logo }
+        class="h-[500px] w-full  sm:block hidden sm:h-[800px]"
       />
       <span class="text-white text-xs absolute bottom-2 right-2">{credit}</span>
       </div>

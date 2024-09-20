@@ -11,10 +11,10 @@
   import Block from './../lib/components/block.svelte';
   import TextBlock from './../lib/components/text.svelte';
   import { Button } from "$lib/components/ui/button";
-
   import  data  from './detention-eligible-by-county-detention-eligible-by-county.csv';
   import geojson from './counties.json'
 
+  import Scroller from '$lib/components/scroller.svelte';
   const genderColor = scaleOrdinal(['#02AEFF', '#FFC413']);
 
   const xForce = forceX().strength(4);
@@ -57,6 +57,15 @@
 
 </div>
 </TextBlock>
+
+<TextBlock>
+  We now have data from a variety of state and local sources that give us a picture of the ways Illinois pretrial detention and release practice and decision-making have changed since a year ago, and the varying effects being felt in local jails and courthouses. It’s still early, of course, for any kind of definitive findings—our evaluation is ongoing, and will run at least through December 2025. Ultimate questions about the effects of the new law on defendants, on court and jail operations, and on public safety can’t be answered till more time has passed and more data becomes available. Moreover, one of our most consistent findings is that the effects of the PFA vary by county and region, making even simple generalizations about its “statewide” effects problematic, if not meaningless. 
+</TextBlock>
+<TextBlock>
+  This report is intended to provide a snapshot of what we’re learning, at a significant point in time. We can say something about the kinds of cases in which detention is being sought and granted, and the kinds of conditions being imposed on those who are released pretrial. We have some limited information from which to judge the extent to which people released under the PFA are successfully abiding by the law and returning to court.
+</TextBlock>
+
+
 <TextBlock>
   Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal
   behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction
@@ -71,6 +80,7 @@
 </TextBlock>
 
 </Block>
+
 
 <div id="chart-container" class="max-w-[1400px] mx-auto  mt-[100px]">
 <h2 class="text-4xl font-semibold mb-8 font-mono text-center">Explore detention rates in 72 Ilinois Counties</h2>
@@ -216,39 +226,17 @@
   
 
 <TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal
-  behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction
-  with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their
-  arrest.
+  The Pretrial Fairness Act (PFA) has now been in operation in Illinois for one full year. Beginning September 18, 2023, the PFA fundamentally altered pretrial practices in Illinois. The law eliminated the use of cash bail in all criminal cases, prohibited pretrial detention altogether for most defendants, and established new and uniform processes, timelines and decision standards for pretrial detention and release hearings, among many other changes. What can we say about the workings and effects of the new law at the one-year point? 
 </TextBlock>
 <TextBlock>
-  So how does it look so far?
+  We now have data from a variety of state and local sources that give us a picture of the ways Illinois pretrial detention and release practice and decision-making have changed since a year ago, and the varying effects being felt in local jails and courthouses. It’s still early, of course, for any kind of definitive findings—our evaluation is ongoing, and will run at least through December 2025. Ultimate questions about the effects of the new law on defendants, on court and jail operations, and on public safety can’t be answered till more time has passed and more data becomes available. Moreover, one of our most consistent findings is that the effects of the PFA vary by county and region, making even simple generalizations about its “statewide” effects problematic, if not meaningless. 
 </TextBlock>
 <TextBlock>
-  Obviously, we have only our initial impressions at this point, based on 150-plus hearing observations—mostly in Cook County, but also in Lake, Winnebago, Kane, and McLean Counties. We do have a baseline for comparison, however, having made structured observations in about 140 bond court hearings under previous law, many in counties we’ve now had a chance to revisit. In addition, we are continuing to collect and analyze available data regarding jail and pretrial supervision populations and the outcomes of detention hearings, which serve to supplement our first-hand observations
+  This report is intended to provide a snapshot of what we’re learning, at a significant point in time. We can say something about the kinds of cases in which detention is being sought and granted, and the kinds of conditions being imposed on those who are released pretrial. We have some limited information from which to judge the extent to which people released under the PFA are successfully abiding by the law and returning to court.
 </TextBlock>
 
 </Block>
 
-<h1 class="text-2xl">Test Map</h1>
-<div class="h-[400px] ">
-  <Chart
-    geo={{
-      projection,
-      fitGeojson: selectedStateFeature,
-    }}
-    let:tooltip
-  >
-    <Svg>
-      {#each selectedCountiesFeatures as feature}
-        <GeoPath
-          geojson={feature}
-          class="fill-surface-100 stroke-surface-content/10"
-          {tooltip}
-        />
-      {/each}
 
-    </Svg>
-    <Tooltip header={(data) => data.properties.name} />
-  </Chart>
-</div>
+
+

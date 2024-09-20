@@ -44,6 +44,7 @@
 		"d3-geo": "^3.1.1",
 		"d3-scale": "^4.0.2",
 		"d3-svg-annotation": "^2.5.1",
+		"date-fns": "^3.6.0",
 		"layerchart": "^0.43.5",
 		"tailwind-merge": "^2.3.0",
 		"tailwind-variants": "^0.2.1",
