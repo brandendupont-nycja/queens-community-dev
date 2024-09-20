@@ -63,8 +63,7 @@
   
   <TextBlock>
     <div class="first-letter:text-7xl first-letter:text-black first-letter:font-sans first-letter:pr-1 first-letter:pb-1 first-letter:float-left ">
-
-      The Illinois Pretrial Fairness Act (PFA) went into effect across the state on Monday, September 18th, completely overhauling Illinois pretrial detention and release practices. Among other things, the PFA abolished the use of cash bail as a condition of pretrial release, imposed strict new limits on the use of pretrial jail detention for people accused of crimes, and set up an array of new hearings, procedures, and decision standards for courts. As evaluators of the PFA’s statewide implementation and impact, we’ve been observing as many first appearance and detention hearings as we can in these early weeks, to monitor the roll-out and get a sense of early challenges to implementation.
+      The Pretrial Fairness Act (PFA) has now been in operation in Illinois for one full year. Beginning September 18, 2023, the PFA fundamentally altered pretrial practices in Illinois. The law eliminated the use of cash bail in all criminal cases, prohibited pretrial detention altogether for most defendants, and established new and uniform processes, timelines and decision standards for pretrial detention and release hearings, among many other changes. What can we say about the workings and effects of the new law at the one-year point?
 
 
 </div>
@@ -81,9 +80,7 @@
 <TextBlock>
   And we know that this information, though provisional, is of vital interest to the public and the field.
 </TextBlock>
-<TextBlock>
-  So how does it look so far?
-</TextBlock>
+
 <TextBlock>
   We’ll continue to share findings, insights, and questions as they emerge. And in the meantime, where possible, we have worked with state and local agencies to make the data we are using for our evaluation accessible to the public through data tools on our website. <PopOver number={"[1]"} >For example, we collaborated with IDOC to develop a data dashboard tracking the number of people booked each month into <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/illinois-jail-population-tracker"}> county jails</a>. See <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/tracking-the-cook-county-jail-and-community-corrections-population"}>also our Cook County Jail Tracker</a>. </PopOver >
 </TextBlock>
