@@ -36,14 +36,27 @@
             PFA Background
         </a>
         </div>
-     <div class="border-b border-white px-4 py-2 font-mono text-xs">
-        Prior Evaluation Findings
+     <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+        <a href="#anchor-loyola-evaluation" on:click={handleAnchorClick}>
+         Loyola Center for Criminal Justice’s Evaluation
+        </a>
      </div>
-     <div class="border-b border-white px-4 py-2 font-mono text-xs">
-        How Has Pretrial Hearing and Decision-Making Practice Changed Under the PFA?
+     <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-prior-findings" on:click={handleAnchorClick}>
+         Prior Evaluation Findings
+      </a>
+   </div>
+     <div class="border-b border-white px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+      <a href="#anchor-pretrial-decision-change" on:click={handleAnchorClick}>
+         How Has Pretrial Hearing and Decision-Making Practice Changed Under the PFA?
+      </a>
      </div>
-     <div class=" px-4 py-2 font-mono text-xs">
-        Who is Eligible for Detention and Who is Being Detained Under the PFA?
+     <div class=" px-4 py-2 font-mono text-xs hover:text-yellow hover:text-underline">
+       <a href="#anchor-eligible-detention-detained" on:click={handleAnchorClick}>
+         Who is Eligible for Detention and Who is Being Detained Under the PFA?
+      </a>
      </div>
+
+     
     </Collapsible.Content>
    </Collapsible.Root>
