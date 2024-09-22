@@ -60,7 +60,7 @@ import logo from '$lib/assets/images/capitol.jpg';
       <img
         alt="correctional image"
         src={logo }
-        class="h-[500px] w-full  sm:block hidden sm:h-[620px]"
+        class="h-[500px] w-full  sm:block  sm:h-[620px]"
       />
       <div class="absolute bottom-2 right-2  ">
       <div class="text-white text-xs floating-right"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
