@@ -17,7 +17,6 @@
   
   import { Button } from "$lib/components/ui/button";
   import  data  from './detention-eligible-by-county-detention-eligible-by-county.csv';
-  import geojson from './counties.json'
 
   import Scroller from '$lib/components/scroller.svelte';
   const genderColor = scaleOrdinal(['#02AEFF', '#FFC413']);
@@ -31,27 +30,12 @@
     .domain([0, 1134 ?? 0])
     .range([0, maxRadius]);
 
-  const SwarmLabels = ['Iroquois', 'Bond']
-
-  let projection = geoMercator;
-
-  const counties = feature(geojson, geojson.objects.counties);
-  const states = feature(geojson, geojson.objects.states);
-  //const geojson = feature(usStates, usStates.objects.collection);
-
-
-  let selectedStateId = '17'; // 'West Virginia';
-  $: selectedStateFeature = states.features.find((f) => f.id === selectedStateId);
-  $: selectedCountiesFeatures = counties.features.filter(
-    (f) => String(f.id).slice(0, 2) === selectedStateId
-  );
-
 
  </script>
 
 <HeroImage />
 
-<div class="sticky top-[10vh] z-50">
+<div class="sticky xl:top-[1vh] 2xl:top-[10vh] z-50">
   <Menu/>
 </div>
 
@@ -89,7 +73,8 @@
 <AccordianBlock />
 
 
-<h2 id="anchor-pretrial-decision-change" class="text-4xl font-semibold pt-28 pb-4">
+
+<h2 id="anchor-pretrial-decision-change" class="text-4xl font-semibold pt-32 pb-4">
   How Has Pretrial Hearing and Decision-Making Practice Changed Under the PFA?
 </h2>
 
@@ -106,17 +91,23 @@
 
 <TextBlock>
 
-  <ul class="list-disc space-y-2">
+  <ul class="list-disc ">
     <li>
-<b class="text-lg font-bold">Duration of Hearings.</b>  In the counties where we observed hearings before and after PFA implementation, we noted a significant increase in the duration of detention hearings. Before the PFA, bond court hearings observed were almost uniformly short, with median lengths between 4 and 6 minutes. Post-PFA “conditions” hearings, in which the only issues concerned terms and conditions of release, were also short, with medians between 4 and 5 minutes. But hearings in which the state sought detention took longer in all the counties we visited, with median lengths that varied from 10 to 30 minutes. In more complex and contested cases, we observed detention hearings that lasted close to an hour—an unheard-of length in the period before the PFA.
+<b class="text-lg font-bold ">Duration of Hearings.</b>  In the counties where we observed hearings before and after PFA implementation, we noted a significant increase in the duration of detention hearings. Before the PFA, bond court hearings observed were almost uniformly short, with median lengths between 4 and 6 minutes. Post-PFA “conditions” hearings, in which the only issues concerned terms and conditions of release, were also short, with medians between 4 and 5 minutes. But hearings in which the state sought detention took longer in all the counties we visited, with median lengths that varied from 10 to 30 minutes. In more complex and contested cases, we observed detention hearings that lasted close to an hour—an unheard-of length in the period before the PFA.
+</li>
+<div class="mt-10"></div>
+<div class="mt-10 mb-10">
+<iframe title="After the PFA, hearings in which detention was at issue were significantly longer in all counties." aria-label="Dot Plot" id="datawrapper-chart-XBdRl" src="https://datawrapper.dwcdn.net/XBdRl/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="402" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</div>
+<hr />
+<div class="mt-10"></div>
+<li>
+<b class="text-lg font-bold space-y-2">Issues Raised.</b>  Prior to the PFA, in all counties observed, bond court hearings featured little individualized argumentation. Following PFA implementation, hearing argumentation was more varied and substantive. Both prosecution and defense raised a broader range of case-specific issues, there was more examination of the evidence and its weight, and the two sides were more likely to engage directly on a common set of factors acknowledged to be relevant to the detention/release decision. 
 </li>
 
 <li>
-<b class="text-lg font-bold">Issues Raised.</b>  Prior to the PFA, in all counties observed, bond court hearings featured little individualized argumentation. Following PFA implementation, hearing argumentation was more varied and substantive. Both prosecution and defense raised a broader range of case-specific issues, there was more examination of the evidence and its weight, and the two sides were more likely to engage directly on a common set of factors acknowledged to be relevant to the detention/release decision. 
-</li>
-
-<li>
-<b class="text-lg font-bold">Reasons for Decisions.</b>  Prior to the PFA, it was common practice for judges to issue bond decisions without citing any reasons for them: in the courts we observed, bond decisions were announced without articulated reasons between 49% and 88% of the time. After the PFA took effect, judges in the same four counties more often cited reasons for their decisions, and always in cases in which detention was at issue. And those reasons were more likely to relate to the facts and case characteristics raised by the parties. 
+<b class="text-lg font-bold space-y-2">Reasons for Decisions.</b>  Prior to the PFA, it was common practice for judges to issue bond decisions without citing any reasons for them: in the courts we observed, bond decisions were announced without articulated reasons between 49% and 88% of the time. After the PFA took effect, judges in the same four counties more often cited reasons for their decisions, and always in cases in which detention was at issue. And those reasons were more likely to relate to the facts and case characteristics raised by the parties. 
 </li>
 
   </ul>
@@ -192,6 +183,16 @@
   <TextBlock>
     What offenses are charged against those eligible for detention on public safety grounds? Combining data from the 77 counties served by the Office of Statewide Pretrial Services (OSPS) with data from an additional 11 non-OSPS counties plus Cook County (a total of 89 of Illinois’ 102 counties) provides a useful picture here. <PopOver number={"[18]"} >Because it operates across a large and growing number of Illinois counties—including many downstate and rural counties—OSPS is an invaluable source of detention petition and outcome information under the PFA. In the counties covered by OSPS, the agency performs pretrial investigations on all defendants being held overnight in jail pending PFA detention or conditions hearings. From the PFA’s September 18, 2023 effective date through July 26, 2024, OSPS either conducted pretrial investigations or was ordered to provide pretrial services in 8,760 cases meeting offense-level criteria for public safety detention.</PopOver > Still, it is important to point out that Cook County accounts for a majority (59%) of the cases from these 89 counties. Out of nearly 25,000 detention-eligible cases filed across these 89 counties  during the PFA’s first ten months, more than half (53%) involved domestic violence charges—including 46% in which the top charges were misdemeanor domestic batteries or violations of orders of protection (VOOP), and another 7% in which the top charges were felony-level offenses of the same kind. <PopOver number={"[19]"} >This is consistent with Loyola’s pre-PFA  <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/estimate-pfa-act"}>projections</a> based on analysis of historical arrest data.</PopOver > The remaining detention-eligible cases (nondomestic) included top charges involving forcible felonies, and nonprobationable firearm possession, property, or drug-law violation offenses.
   </TextBlock>
+
+  <TextBlock>
+
+    <div class="mb-10  mt-10">
+      <iframe title="Out of nearly 25,000 detainable cases filed across 89 counties, 53% involved domestic violence charges." aria-label="Bar Chart" id="datawrapper-chart-rXa70" src="https://datawrapper.dwcdn.net/rXa70/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="271" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+      </script>
+      </div>
+      <hr/>
+      
+    </TextBlock>
 
 
   <TextBlock>
@@ -296,9 +297,9 @@
   
         <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100'  let:data>           
           <TooltipItem label="Number of Cases" value={data.size} />
-          <TooltipItem label="Detention Eligible Cases Detained" value={data.detention_eligible_cases_detained}% />
+          <TooltipItem label="Detainable Offense Cases Detained" value={data.detention_eligible_cases_detained}% />
           <TooltipItem label="Detention Petition Filed But Not Detained" value={data.detention_petition_filed_but_denied}% />
-          <TooltipItem label="Detention Eligible Cases with No Petition Filed" value={data.detention_eligible_no_petition_filed}% />
+          <TooltipItem label="Detainable Offense Cases with No Petition Filed" value={data.detention_eligible_no_petition_filed}% />
         </Tooltip>
       </Chart>
     </div>
@@ -352,7 +353,7 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 
 <TextBlock>
   <div class="mb-10  mt-10">
-    <iframe title="In 22 counties examined, the percent of defendants charged with a detainable offense who were detained at their initial court hearing decreased in all counties. " aria-label="Range Plot" id="datawrapper-chart-0HYJt" src="https://datawrapper.dwcdn.net/0HYJt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="635" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    <iframe title="In 22 counties examined, the percent of defendants charged with a detainable offense who were detained at their initial court hearing decreased in all counties. " aria-label="Arrow Plot" id="datawrapper-chart-W6Q3m" src="https://datawrapper.dwcdn.net/W6Q3m/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="698" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
     </script>
     </div>
     <hr/>
@@ -391,8 +392,7 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
     <b class="text-lg font-bold">Length of Stay.</b> We noted a decline in the proportion of the jail population held for short periods, and an increase in the proportion held for longer periods.
     </li>
     <li>
-      <b class="text-lg font-bold">Offense Mix.</b> We noted a decline in the proportion of the jail population held for short periods, and an increase in the proportion held for longer periods.
-      </li>        
+      <b class="text-lg font-bold">Offense Mix.</b> At least in Cook County, we noted a large increase in the proportion of the jail population charged with person and weapon offenses, and a decrease in the proportion held for drug, DUI, property, and public order offenses.
 </TextBlock>
 
 <TextBlock>
@@ -415,7 +415,7 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 </TextBlock>
 
 <TextBlock>
-  If these findings turn out to be representative of the state as a whole, they would be consistent not only with the basic design of the PFA, but with the early impressions of many of the practitioners we interviewed. Except for very short jail holds that may precede hearings on release conditions in some counties, <PopOver number={"[26]"} > Following an arrest for even a “nondetainable” offense, a defendant may be held in jail pending a hearing to determine appropriate conditions of release. This kind of prehearing jail holding appears to be fairly widespread, judging from court observations and interviews with stakeholders around the state. Some counties seem to have a policy of holding everyone taken into custody until they can be released by a judge. And depending on the timing of the arrest and the local court’s hearing schedule, such jail stays may sometimes last several days.</PopOver > the PFA prohibits pretrial detention of most defendants, and does away with the once-routine jail stays necessitated by the time it took to raise money needed for bonds. Defense attorneys  we interviewed believed that the PFA’s detention eligibility restrictions had in fact reduced this form of short-term detention in their counties. <PopOver number={"[27]"} >“I've seen people who before the PFA might get stuck in custody until money could be posted…They're getting released, they're going home, they're going back to work.”</PopOver > They also had the sense that the mix of those detained had changed, with defendants accused of violent and serious offenses being more likely to be jailed, and jailed longer, than under the cash bail system. <PopOver number={"[28]"} >“Some violent people were getting a surprise that they just couldn't up and bond out, especially those first few months…If it's guns, you're going to be detained. If it's violent, you're going to be detained…They're being detained and they're not they're not getting out, and they would have bonded out before.”</PopOver >  
+  If these findings turn out to be representative of the state as a whole, they would be consistent not only with the basic design of the PFA, but with the early impressions of many of the practitioners we interviewed. Except for very short jail holds that may precede hearings on release conditions in some counties, <PopOver number={"[26]"} > Following an arrest for even a “nondetainable” offense, a defendant may be held in jail pending a hearing to determine appropriate conditions of release. This kind of prehearing jail holding appears to be fairly widespread, judging from court observations and interviews with stakeholders around the state. Some counties seem to have a policy of holding everyone taken into custody until they can be released by a judge. And depending on the timing of the arrest and the local court’s hearing schedule, such jail stays may sometimes last several days.</PopOver > the PFA prohibits pretrial detention of most defendants, and does away with the once-routine jail stays necessitated by the time it took to raise money needed for bonds. Defense attorneys  we interviewed believed that the PFA’s detention eligibility restrictions had in fact reduced this form of short-term detention in their counties. <PopOver number={"[27]"} >“I've seen people who before the PFA might get stuck in custody until money could be posted…They're getting released, they're going home, they're going back to work.”</PopOver > They also had the sense that the mix of those detained had changed, with defendants accused of violent and serious offenses being more likely to be jailed, and jailed longer, than under the cash bail system. <PopOver number={"[28]"} >“Some violent people were getting a surprise that they just couldn't up and bond out, especially those first few months…If it's guns, you're going to be detained. If it's violent, you're going to be detained…They're being detained and they're not getting out, and they would have bonded out before.”</PopOver >  
 </TextBlock>
 
 <h2 id="anchor-pretrial-supervision" class="text-4xl font-semibold pt-4 pb-4">
@@ -423,7 +423,7 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 </h2>
 
 <TextBlock>
-  Unlike pretrial jail populations, pretrial supervision populations have increased since the PFA was implemented. In fact, statewide reductions in detention numbers have been more than offset by increases in the numbers of defendants released to the community but placed on pretrial supervision or electronic monitoring.  <PopOver number={"[29]"} >While these offsetting increases may be concerning to some, it should be noted that “pretrial supervision” may denote a variety of arrangements, from relatively intensive monitoring to simple reporting obligations. Even at its most intensive, however, advocates would suggest that pretrial supervision at least spares defendants many of the negative side effects of jail detention, and is preferable on that account alone.</PopOver >   
+  Our research prior to the implementation of the PFA found that the vast majority of individuals awaiting disposition of a criminal case were neither detained in jail nor on <a class="text-main hover:font-underline" href="https://loyolaccj.org/blog/pfa-jail"> pretrial supervision </a>. While that overall pattern remains—that most people awaiting disposition of their criminal case are not detained or on supervision—there have been some shifts. Unlike pretrial jail populations, pretrial supervision populations have increased since the PFA was implemented. In fact, statewide reductions in detention numbers have been more than offset by increases in the numbers of defendants released to the community but placed on pretrial supervision or electronic monitoring.  <PopOver number={"[29]"} >While these offsetting increases may be concerning to some, it should be noted that “pretrial supervision” may denote a variety of arrangements, from relatively intensive monitoring to simple reporting obligations. Even at its most intensive, however, advocates would suggest that pretrial supervision at least spares defendants many of the negative side effects of jail detention, and is preferable on that account alone.</PopOver >   
 </TextBlock>
 
 <TextBlock>
@@ -434,6 +434,13 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 <TextBlock>
   <div class="mb-10  mt-10">
     <iframe title="Across 44 counties, the increase in defendants under pretrial supervision post-PFA dramatically exceeded the post-PFA drop in the pretrial jail population." aria-label="Interactive line chart" id="datawrapper-chart-J79EV" src="https://datawrapper.dwcdn.net/J79EV/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="512" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+    </script>
+    </div>
+    <hr/>  
+</TextBlock>
+<TextBlock>
+  <div class="mb-10  mt-10">
+    <iframe title="In non-OSPS counties outside of Cook County, average monthly pretrial jail populations fell by roughly 500 people after the PFA went into effect and pretrial supervision populations increased by roughly 300" aria-label="Interactive line chart" id="datawrapper-chart-ISA9R" src="https://datawrapper.dwcdn.net/ISA9R/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="507" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
     </script>
     </div>
     <hr/>  
@@ -449,7 +456,16 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 </h2>
 
 <TextBlock>
-  Prior to the PFA, there was some concern that the new law might trigger an unnecessary expansion in the use of pretrial electronic monitoring—particularly in counties served by OSPS, which for the first time would be providing GPS monitoring at no cost to the county or the defendant. <PopOver number={"[30]"} >There were similar concerns in Cook County, where the Sheriff operates an extensive pretrial electronic monitoring program. In fact, however, the electronic monitoring population in Cook is <a class="text-main hover:font-underline" href={"https://loyolaccj.org/blog/tracking-the-cook-county-jail-and-community-corrections-population"}>down substantially</a></PopOver >  
+  Prior to the PFA, there was some concern that the new law might trigger an unnecessary expansion in the use of pretrial electronic monitoring—particularly in counties served by OSPS, which for the first time would be providing GPS monitoring at no cost to the county or the defendant. There were similar concerns in Cook County, where the Sheriff operates an extensive pretrial electronic monitoring program. In fact, however, the electronic monitoring population in Cook is down substantially.
+</TextBlock>
+
+<TextBlock>
+<div class="mb-10  mt-10">
+<iframe title="Cook County Sheriff's Electronic Monitoring Population" aria-label="Interactive line chart" id="datawrapper-chart-GlakD" src="https://datawrapper.dwcdn.net/GlakD/196/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="508" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</div>
+<hr/>  
+
 </TextBlock>
 
 <TextBlock>
@@ -457,7 +473,7 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 </TextBlock>
 
 <TextBlock>
-  Practitioner interviews confirmed that it is typically the defendant’s counsel advocating electronic monitoring, rather than the state. Some prosecutors we spoke to expressed reservations about using electronic monitoring, particularly in cases where it might eventually result in “time served” credit against a prison sentence. <PopOver number={"[31]"} >“If I know they're going to prison, I'd rather them not have an easy six months sitting at home, when they need to be serving that in DOC.”</PopOver >
+  Practitioner interviews confirmed that it is typically the defendant’s counsel advocating electronic monitoring, rather than the state. Some prosecutors we spoke to expressed reservations about using electronic monitoring, particularly in cases where it might eventually result in “time served” credit against a prison sentence. <PopOver number={"[30]"} >“If I know they're going to prison, I'd rather them not have an easy six months sitting at home, when they need to be serving that in DOC.”</PopOver >
 </TextBlock>
 
 <h2 id="anchor-fta" class="text-4xl font-semibold pt-4 pb-4">
@@ -481,7 +497,7 @@ Analysis of court data from 22 counties indicates that overall FTA warrant rates
 </TextBlock>
 
 <TextBlock>
-  But this is far from the final word. First, there is no one right way to measure hearing attendance. <PopOver number={"[32]"} >For example, OSPS calculates a rate based on the ratio of FTA warrants issued to total court dates, and reports a statewide rate of 5%--meaning that an FTA warrant is issued at only one of every 20 hearings held in OSPS-supervised cases. The warrant rate per defendant in OSPS cases may be higher or lower, depending on how many hearings occur in each defendant’s case during the measurement period.</PopOver > For example, when we include any instance of hearing nonattendance—whether or not an FTA warrant was issued—resulting FTA rates are higher; however, even using this broader measure, FTA rates appear to have decreased following PFA implementation (from 25.1% to 22.8%). <PopOver number={"[33]"} >While the analyses of FTA Warrant rates include Cook County, here only the 21 non-Cook counties for which we had access to court event data are included.</PopOver >  
+  But this is far from the final word. First, there is no one right way to measure hearing attendance. <PopOver number={"[31]"} >For example, OSPS calculates a rate based on the ratio of FTA warrants issued to total court dates, and reports a statewide rate of 5%--meaning that an FTA warrant is issued at only one of every 20 hearings held in OSPS-supervised cases. The warrant rate per defendant in OSPS cases may be higher or lower, depending on how many hearings occur in each defendant’s case during the measurement period.</PopOver > For example, when we include any instance of hearing nonattendance—whether or not an FTA warrant was issued—resulting FTA rates are higher; however, even using this broader measure, FTA rates appear to have decreased following PFA implementation (from 25.1% to 22.8%). <PopOver number={"[32]"} >While the analyses of FTA Warrant rates include Cook County, here only the 21 non-Cook counties for which we had access to court event data are included.</PopOver >  
 </TextBlock>
     
 
@@ -490,12 +506,13 @@ Analysis of court data from 22 counties indicates that overall FTA warrant rates
     <div class="mb-10  mt-10">
       <iframe title="In 21 counties examined, overall FTA rates (with and without a warrant issued) decreased after the PFA, from 25.1% to 22.8%." aria-label="Multiple Lines" id="datawrapper-chart-26kRO" src="https://datawrapper.dwcdn.net/26kRO/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="467" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
       </script>
+      </div>
       <hr/>  
   </TextBlock>   
 </TextBlock>
 
 <TextBlock>
-  Lengthening the measurement period from six to twelve months would also change the results, as would limiting the analysis to include only defendants with serious charges. Moreover, not all of the post-PFA cases used in the analysis have been closed. Finally, the PFA also made changes to the statutory provision governing issuance of warrants for nonattendance, creating a new summons option and leaving it somewhat unclear whether FTA warrants before and after the amendment are sufficiently equivalent to permit one-to-one comparisons. <PopOver number={"[34]"} >Prior to the PFA amendment, 725 ILCS 5/110-3 authorized courts to issue arrest warrants in response to a violation of any pretrial release condition, and required that a warrant be issued for any failure to appear in a felony case. After the amendment, the same provision gives courts the option to respond to failures to appear with “a summons or a warrant,” and directs that the law “be construed to effectuate the goal of relying upon summonses rather than warrants to ensure the appearance of the defendant in court whenever possible.” The amendment also provided that, if a summons is issued and the defendant appears in court in response, the defendant “shall not be recorded in the official docket as having failed to appear on the initial missed court date.”</PopOver >
+  Lengthening the measurement period from six to twelve months would also change the results, as would limiting the analysis to include only defendants with serious charges. Moreover, not all of the post-PFA cases used in the analysis have been closed. Finally, the PFA also made changes to the statutory provision governing issuance of warrants for nonattendance, creating a new summons option and leaving it somewhat unclear whether FTA warrants before and after the amendment are sufficiently equivalent to permit one-to-one comparisons. <PopOver number={"[33]"} >Prior to the PFA amendment, 725 ILCS 5/110-3 authorized courts to issue arrest warrants in response to a violation of any pretrial release condition, and required that a warrant be issued for any failure to appear in a felony case. After the amendment, the same provision gives courts the option to respond to failures to appear with “a summons or a warrant,” and directs that the law “be construed to effectuate the goal of relying upon summonses rather than warrants to ensure the appearance of the defendant in court whenever possible.” The amendment also provided that, if a summons is issued and the defendant appears in court in response, the defendant “shall not be recorded in the official docket as having failed to appear on the initial missed court date.”</PopOver >
 </TextBlock>
     
 
@@ -508,7 +525,7 @@ Analysis of court data from 22 counties indicates that overall FTA warrant rates
 </h2>
 
 <TextBlock>
-  While we lack the data needed for a causal analysis at this point, we can say at least that crime in Illinois did not go up following PFA implementation. In fact, reported violent and property crime declined in rural counties and in Cook and other large counties, though not in every county. Using data collected by the Illinois State Police through the National Incident Based Reporting System (NIBRS), we compared reported crime in each of Illinois’ counties during the first six months of 2023 (before the PFA) with crime reported during the first six months of 2024 (after the PFA). <PopOver number={"[35]"} >The analysis was based on data pulled from the State Police system on Sept 3, 2024. Because of incomplete reporting, 17 of Illinois’ 102 counties were excluded from the analysis.</PopOver > The statewide volume of reported crimes declined 12% between the two periods. Violent crime declined 7%, and property crime declined 14%. 
+  While we lack the data needed for a causal analysis at this point, we can say at least that crime in Illinois did not go up following PFA implementation. In fact, reported violent and property crime declined in rural counties and in Cook and other large counties, though not in every county. Using data collected by the Illinois State Police through the National Incident Based Reporting System (NIBRS), we compared reported crime in each of Illinois’ counties during the first six months of 2023 (before the PFA) with crime reported during the first six months of 2024 (after the PFA). <PopOver number={"[34]"} >The analysis was based on data pulled from the State Police system on Sept 3, 2024. Because of incomplete reporting, 17 of Illinois’ 102 counties were excluded from the analysis.</PopOver > The statewide volume of reported crimes declined 12% between the two periods. Violent crime declined 7%, and property crime declined 14%. 
 </TextBlock>
   
 <TextBlock>
