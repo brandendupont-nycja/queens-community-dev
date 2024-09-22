@@ -13,7 +13,7 @@ import logo from '$lib/assets/images/capitol.jpg';
   
 
     <section class="overflow-hidden bg-black sm:grid sm:grid-cols-2 ">
-      <div class="relative">
+      <div class="relative sm:hidden">
       <img
       alt="Image of the Illinois State Capitol by Andrew Adams"
       src={logo }
