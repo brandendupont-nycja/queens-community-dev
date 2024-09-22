@@ -313,7 +313,7 @@
       </Chart>
     </div>
 
-    <div class="h-[500px] pr-10 pl-10 sm:hidden  p-4 z-index-10  ">
+    <div class="h-[900px] pr-20 pl-0 sm:hidden   z-index-10  ">
       <Chart
         data={data}
         y={(d) => d.detention_eligible_cases_detained}
@@ -335,7 +335,7 @@
           <ForceSimulation
             forces={{
               y: yForce.y((d) => yGet(d)),
-              x: xForce.x(height / 4),
+              x: xForce.x(height / 8),
               collide: collideForce.radius(d => rScale(d.size)+1),
               charge: forceManyBody().strength(4),
             }}
