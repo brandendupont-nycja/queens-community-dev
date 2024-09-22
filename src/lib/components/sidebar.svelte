@@ -35,57 +35,57 @@
         <div class="space-y-1 text-white overflow-y-auto">
             <div class="border-b border-t border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
                 
-                <a href="#anchor-pfa-background" on:click={handleAnchorClick}>
+                <a href="#anchor-pfa-background" >
                     PFA Background
                 </a>
                 </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-                <a href="#anchor-loyola-evaluation" on:click={handleAnchorClick}>
+                <a href="#anchor-loyola-evaluation" >
                  Loyola Center for Criminal Justice’s Evaluation
                 </a>
              </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-prior-findings" on:click={handleAnchorClick}>
+              <a href="#anchor-prior-findings" >
                  Prior Evaluation Findings
               </a>
            </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-pretrial-decision-change" on:click={handleAnchorClick}>
+              <a href="#anchor-pretrial-decision-change" >
                  How Has Pretrial Hearing and Decision-Making Practice Changed Under the PFA?
               </a>
              </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-               <a href="#anchor-eligible-detention-detained" on:click={handleAnchorClick}>
+               <a href="#anchor-eligible-detention-detained" >
                  Who is Eligible for Detention and Who is Being Detained Under the PFA?
               </a>
              </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-detention-release-changed" on:click={handleAnchorClick}>
+              <a href="#anchor-detention-release-changed" >
                  How Have Detention and Release Rates Changed under the PFA?
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-jail-pretrial-change" on:click={handleAnchorClick}>
+              <a href="#anchor-jail-pretrial-change" >
                  How Have Jail and Pretrial Supervision Populations Changed Under the PFA?
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-pretrial-supervision" on:click={handleAnchorClick}>
+              <a href="#anchor-pretrial-supervision" >
                  Pretrial Supervision
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-electronic-monitoring" on:click={handleAnchorClick}>
+              <a href="#anchor-electronic-monitoring" >
                  Electronic Monitoring
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-fta" on:click={handleAnchorClick}>
+              <a href="#anchor-fta" >
                  How Has Hearing Attendance Changed Under the PFA?
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-crime" on:click={handleAnchorClick}>
+              <a href="#anchor-crime" >
                  What Can We Say About Crime and Public Safety Under the PFA So Far?
              </a>
             </div>
