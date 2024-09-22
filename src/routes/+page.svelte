@@ -35,7 +35,7 @@
 
 <HeroImage />
 
-<div class="sticky xl:top-[1vh] 2xl:top-[10vh] z-50">
+<div class="sticky xl:top-[1vh] 2xl:top-[10vh] z-50 sm:float-right float-none md:block top-0  ">
   <Menu/>
 </div>
 

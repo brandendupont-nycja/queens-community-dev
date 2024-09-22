@@ -16,7 +16,7 @@
 
 
     
-   <Collapsible.Root class="w-[250px] space-y-2 md:block hidden bg-black float-right">
+   <Collapsible.Root class="md:w-[250px] w-full space-y-2  bg-black ">
     <div class="flex items-center justify-between space-x-4 pr-4">
      <h4 class="text-md font-semibold text-white p-3 font-mono">Navigate the Report</h4>
      <Collapsible.Trigger asChild let:builder>
