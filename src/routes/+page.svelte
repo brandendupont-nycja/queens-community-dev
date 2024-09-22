@@ -40,7 +40,7 @@
   <Menu/>
 </div>
 
-<div class=" sm:hidden sticky top-0">
+<div class=" sm:hidden sticky top-0 z-50">
   <div class="flex items-center justify-between space-x-4 pr-4 bg-black mb-10 ">
     <h4 class="text-sm font-semibold text-white p-3 font-mono">Navigate the Report</h4>
     <Sidebar></Sidebar>      
