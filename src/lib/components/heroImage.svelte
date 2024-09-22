@@ -3,7 +3,7 @@
 
 const authors = ["Patrick Griffin", 'Branden DuPont',"Don Stemen","Dave Olson","Amanda Ward", ]
 
-const credit ="Kevin Rajaram"
+const credit ="Photo by: Andrew Adams"
 const image_var ="https://images.unsplash.com/photo-1491832136260-6db1d35247e9?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 import logo from '$lib/assets/images/capitol.jpg';
@@ -56,14 +56,17 @@ import logo from '$lib/assets/images/capitol.jpg';
     </div>
       </div>
     
-    <div class=''>
+    <div class='relative'>
       <img
         alt="correctional image"
         src={logo }
         class="h-[500px] w-full  sm:block hidden sm:h-[620px]"
       />
-      <span class="text-white text-xs absolute bottom-2 right-2">{credit}</span>
+      <div class="absolute bottom-2 right-2  ">
+      <div class="text-white text-xs floating-right"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
+    </div>
       </div>
+      
     </section>
     
 
