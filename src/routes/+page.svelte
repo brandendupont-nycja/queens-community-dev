@@ -225,7 +225,7 @@
 
 </Block>
 
-<div id="chart-container" class="max-w-[1400px] mx-auto  mt-[100px]">
+<div id="chart-container" class="max-w-[1400px] mx-auto  mt-[100px] sm:pr-0 sm:pl-0 pl-10 pr-10">
   <h2 class="text-2xl font-semibold mb-8  max-w-[600px] mx-auto text-center">Of the cases with a detainable offense, the percent with a detention petition filed and the percent resulting in detention varied across Illinois counties.</h2>
   <div class="flex gap-10  justify-center ">
   
@@ -253,7 +253,7 @@
   <div class="text-gray-600 text-center text-md max-w-3xl mx-auto mb-6 mt-6">In some counties, over 70% of defendants charged with detainable offense faced a petition to detain, while in other counties less than 30% faced a petition to detain.</div>
   
   
-    <div class="h-[400px]  p-4 z-index-10  ">
+    <div class="h-[400px] sm:block hidden  p-4 z-index-10  ">
       <Chart
         data={data}
         x={(d) => d.detention_eligible_cases_detained}
@@ -266,7 +266,7 @@
       >
         {@const r = 14}
         <Svg>
-          <Axis rule={{ class: "stroke-none text-black" }} placement="top" format="none"   tickLabelProps={{
+          <Axis rule={{ class: "stroke-none text-black" }} placement="top" format="percent"   tickLabelProps={{
             class: "fill-black text-black text-lg z-index-10",
           }}  
            
@@ -276,6 +276,66 @@
             forces={{
               x: xForce.x((d) => xGet(d)),
               y: yForce.y(height / 2),
+              collide: collideForce.radius(d => rScale(d.size)+1),
+              charge: forceManyBody().strength(4),
+            }}
+            static={true}
+            cloneData
+            let:nodes
+          >
+            {#each nodes as node}
+  
+            
+  
+              <Circle
+                cx={node.x}
+                cy={node.y}
+                r={rScale(node.size)+1}
+                fill={genderColor(node.party)}
+                class="stroke-surface-100  hover:stroke-black "
+                on:pointermove={(e) => tooltip.show(e, node)}
+                on:pointerleave={tooltip.hide}
+              />
+  
+            {/each}
+     
+          </ForceSimulation>
+          
+        </Svg>
+     
+  
+        <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100'  let:data>           
+          <TooltipItem label="Number of Cases" value={data.size} />
+          <TooltipItem label="Detainable Offense Cases Detained" value={data.detention_eligible_cases_detained}% />
+          <TooltipItem label="Detention Petition Filed But Not Detained" value={data.detention_petition_filed_but_denied}% />
+          <TooltipItem label="Detainable Offense Cases with No Petition Filed" value={data.detention_eligible_no_petition_filed}% />
+        </Tooltip>
+      </Chart>
+    </div>
+
+    <div class="h-[500px] pr-10 pl-10 sm:hidden  p-4 z-index-10  ">
+      <Chart
+        data={data}
+        y={(d) => d.detention_eligible_cases_detained}
+        yNice
+        yDomain={[0, 100]}       
+        padding={{ top: 12, left: 2,right: 24 }}
+        let:yGet
+        let:height
+        let:tooltip
+      >
+        {@const r = 14}
+        <Svg>
+          <Axis rule={{ class: "stroke-none text-black" }} placement="right" format="percent"   tickLabelProps={{
+            class: "fill-black text-black text-sm z-index-10",
+          }}  
+           
+          grid={{ style: " stroke: #bcbcbc; color:red" }}
+   />
+          <ForceSimulation
+            forces={{
+              y: yForce.y((d) => yGet(d)),
+              x: xForce.x(height / 4),
               collide: collideForce.radius(d => rScale(d.size)+1),
               charge: forceManyBody().strength(4),
             }}
