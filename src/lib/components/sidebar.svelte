@@ -91,10 +91,5 @@
             </div>
         
         </div>
-     <Sheet.Footer>
-      <Sheet.Close asChild let:builder>
-       <Button builders={[builder]} type="submit">Save changes</Button>
-      </Sheet.Close>
-     </Sheet.Footer>
     </Sheet.Content>
    </Sheet.Root>
