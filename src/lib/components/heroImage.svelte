@@ -19,17 +19,17 @@ import logo from '$lib/assets/images/capitol.jpg';
       aria-label="Image of the Illinois State Capitol by Andrew Adams"
       class="sm:h-[500px] w-full h-[200px] sm:hidden  sm:h-[620px]"
     />
-    <div class="absolute top-32 right-2  ">
-    <div class="text-white text-xs floating-right sm:block hidden"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
+    <div class="absolute top-[60vh] right-2  ">
+    <div class="text-white text-[8px] floating-right sm:block"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
   </div>
       <div class="p-8 md:p-12   grid place-items-center">
         
-        <div class="mt-10">
+        <div class="sm:mt-10">
         <div class="mx-auto max-w-xl grid sm:text-left">
-          <h2 class="font-mono  text-white  md:text-5xl text-3xl font-sans mb-6 ">
+          <h2 class="font-mono  text-white  md:text-5xl text-4xl font-sans mb-6 ">
             The First Year of the Pretrial Fairness Act
           </h2>
-          <p class="text-gray-300 sm:text-base  text-xs">
+          <p class="text-gray-300 sm:text-base  text-sm">
  Beginning September 18, 2023, the Pretrial Fairness Act fundamentally altered pretrial practices in Illinois. What can we say about the workings and effects of the new law at the one-year point? 
           </p>
           
