@@ -256,7 +256,7 @@ function both() {
     <div class=" mb-4 mt-2">In some counties, over 70% of defendants charged with detainable offense faced a petition to detain, while in other counties less than 30% faced a petition to detain. </div>
     <div class="inline-block align-middle">Each  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#02AEFF" class="size-4 inline-block align-middle">
       <path  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm3 10.5a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5h6Z"  />
-    </svg>   is a county scaled by the number of detainable cases.</div>
+    </svg>   is an Illinois county scaled by the number of detainable cases.</div>
   </div>
 
 
