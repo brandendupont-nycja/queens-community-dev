@@ -7,7 +7,7 @@
    <Accordion.Root class="">
     <Accordion.Item value="item-1">
      <Accordion.Trigger>
-        <h2 id="anchor-pfa-background" class="text-2xl font-semibold pt-4 pb-4">
+        <h2 id="anchor-pfa-background" class="sm:text-2xl text-lg  font-semibold pt-4 pb-4">
             PFA Background
           </h2>
      </Accordion.Trigger>
@@ -55,7 +55,7 @@
     </Accordion.Item>
     <Accordion.Item value="item-2">
      <Accordion.Trigger>
-        <h2 id="anchor-loyola-evaluation" class="text-2xl font-semibold pt-4 pb-4">
+        <h2 id="anchor-loyola-evaluation" class="sm:text-2xl font-semibold pt-4 pb-4">
            About Loyola CCJ's Evaluation
           </h2>
      </Accordion.Trigger>
@@ -82,7 +82,7 @@
     </Accordion.Item>
     <Accordion.Item value="item-3">
      <Accordion.Trigger>
-        <h2 id="anchor-prior-findings" class="text-2xl font-semibold pt-4 pb-4">
+        <h2 id="anchor-prior-findings" class="sm:text-2xl text-lg  font-semibold pt-4 pb-4">
             Prior Evaluation Findings
           </h2>
      </Accordion.Trigger>
