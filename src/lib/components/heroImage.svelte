@@ -58,7 +58,7 @@ import logo from '$lib/assets/images/capitol.jpg';
                     <div class='mt-2'>
                       <dd class=" sm:text-sm  text-xs  text-white ">
                         <time >
-                          Report Published: 9-19-2024
+                          Report Published: 9-24-2024
                         </time>
                       </dd>
                     </div>

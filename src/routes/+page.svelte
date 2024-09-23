@@ -358,9 +358,9 @@ function both() {
 
 
     </div>
-    <div class="flex gap-10  justify-center sm:mb-0 mb-10 ">
+    <div class="flex   justify-center sm:mb-0 mb-10  gap-10">
   
-      <div>
+      <div class="grid grid-rows-2 justify-items-start">
     
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
@@ -370,11 +370,11 @@ function both() {
     
     </div>  
     
-      <span class="sm:text-md  text-sm mt-4 font-semibold  ">Percent of Cases {swarmDescription} by County</span>
+      <div class="sm:text-md  text-sm mt-4 font-semibold  ">Percent of Cases {swarmDescription} by County</div>
     
-      <div>
+      <div class="grid grid-rows-2 justify-items-end">
     
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
         </svg>
       
