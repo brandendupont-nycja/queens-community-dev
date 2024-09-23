@@ -17,7 +17,7 @@
   import Menu from './../lib/components/collapsiblemenu.svelte';
   
   import { Button } from "$lib/components/ui/button";
-  import  data  from './detention-eligible-by-county-detention-eligible-by-county.csv';
+  import  data  from './detention-eligible-by-county-detention-eligible-by-county (1).csv';
 
   import Scroller from '$lib/components/scroller.svelte';
   const genderColor = scaleOrdinal(['#02AEFF', '#FFC413']);
@@ -26,11 +26,35 @@
   const yForce = forceY().strength(0.075);
   const collideForce = forceCollide();
 
-  const maxRadius = 30;
+  const maxRadius = 25;
   const rScale = scaleSqrt()
     .domain([0, 1134 ?? 0])
     .range([0, maxRadius]);
 
+
+let swarmChart = (d) => d.both
+let swarmDescription = "Petition to Detain"
+let isSelected = 1
+
+function not_petitioned() {
+  swarmChart =  (d) => d.detention_eligible_cases_detained;
+  swarmDescription = "Not Petitioned" 
+  isSelected = 2
+}
+function petitioned_not_detained() {
+  swarmChart =  (d) => d.detention_petition_filed_but_denied;
+  swarmDescription = "Petition Not Detained"
+  isSelected = 3
+}
+function detained() {
+  swarmChart =  (d) => d.detention_eligible_no_petition_filed;
+  swarmDescription = "Detained"
+  isSelected = 4
+}
+function both() {
+  swarmChart =  (d) => d.both;
+  swarmDescription = "Petition to Detain";
+  isSelected = 1}
 
  </script>
 
@@ -225,40 +249,58 @@
 
 </Block>
 
-<div id="chart-container" class="max-w-[1400px] mx-auto  mt-[100px] sm:pr-0 sm:pl-0 pl-10 pr-10">
-  <h2 class="text-2xl font-semibold mb-8  max-w-[600px] mx-auto text-center">Of the cases with a detainable offense, the percent with a detention petition filed and the percent resulting in detention varied across Illinois counties.</h2>
-  <div class="flex gap-10  justify-center ">
-  
-    <div>
-  
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-    </svg>
-  
-    <span class="text-xs">Less Detained</span>
-  </div>  
-  
-    <span class="text-md mb-4  font-semibold  "> Detainable Eligible Offenses Detained</span>
-  
-    <div>
-  
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-      </svg>
-    
-      <span class=text-xs>More Detained</span>
-    </div>  
-  
+<div id="chart-container" class="max-w-[1400px] mx-auto  mt-[100px] sm:pr-0 sm:pl-0 pl-10 pr-10 ">
+  <h2 class="text-2xl font-semibold mb-4  max-w-[700px] mx-auto">Of the cases with a detainable offense, the percent with a detention petition filed and the percent resulting in detention varied across Illinois counties. </h2>
+
+  <div class="text-black  max-w-[700px] text-md max-w-3xl mx-auto">
+    <div class=" mb-4 mt-2">In some counties, over 70% of defendants charged with detainable offense faced a petition to detain, while in other counties less than 30% faced a petition to detain. </div>
+    <div class="inline-block align-middle">Each  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#02AEFF" class="size-4 inline-block align-middle">
+      <path  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm3 10.5a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5h6Z"  />
+    </svg>   is a county scaled by the number of detainable cases.</div>
   </div>
-  <div class="text-gray-600 text-center text-md max-w-3xl mx-auto mb-6 mt-6">In some counties, over 70% of defendants charged with detainable offense faced a petition to detain, while in other counties less than 30% faced a petition to detain.</div>
+
+
+  <div>
+
+  <div class="grid place-content-center mb-10 mt-10 ">
+  <span class="inline-flex  rounded-md border bg-white shadow-sm ">
+    <button
+      class="inline-block border-black border-e sm:px-8 sm:py-2 sm:text-sm px-4 py-2 border-2 text-xs font-medium  { isSelected === 1 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+      on:click={both}
+    >
+     Petition to Detain
+    </button>
+        <button
+        class="inline-block border-black border-e sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs border-2 font-medium font-medium { isSelected === 2 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+        on:click={not_petitioned}
+      >
+      Not petitioned
+      </button>
+      <button
+      class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2 border-e text-sm font-medium { isSelected === 3 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+      on:click={petitioned_not_detained}
+    >
+    Petitioned Not Detained
+    </button>
+    <button
+    class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2 border-e text-sm font-medium { isSelected === 4 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+    on:click={detained}
+    >
+    Detained
+    </button>
   
+
+  </span>
+</div>
+
+</div>
   
-    <div class="h-[400px] sm:block hidden  p-4 z-index-10  ">
+    <div class="h-[300px] sm:block hidden  p-4 z-index-10  ">
       <Chart
         data={data}
-        x={(d) => d.detention_eligible_cases_detained}
+        x={swarmChart}
         xNice
-        xDomain={[0, 100]}       
+        xDomain={[0, 1]}       
         padding={{ top: 12, left: 8, right: 8 }}
         let:xGet
         let:height
@@ -266,7 +308,7 @@
       >
         {@const r = 14}
         <Svg>
-          <Axis rule={{ class: "stroke-none text-black" }} placement="top" format="percent"   tickLabelProps={{
+          <Axis rule={{ class: "stroke-none text-black" }} placement="top" format="percentRound"   tickLabelProps={{
             class: "fill-black text-black text-lg z-index-10",
           }}  
            
@@ -278,6 +320,7 @@
               y: yForce.y(height / 2),
               collide: collideForce.radius(d => rScale(d.size)+1),
               charge: forceManyBody().strength(4),
+              
             }}
             static={true}
             cloneData
@@ -302,24 +345,51 @@
           </ForceSimulation>
           
         </Svg>
-     
+  
   
         <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100'  let:data>           
-          <TooltipItem label="Number of Cases" value={data.size} />
-          <TooltipItem label="Detainable Offense Cases Detained" value={data.detention_eligible_cases_detained}% />
-          <TooltipItem label="Detention Petition Filed But Not Detained" value={data.detention_petition_filed_but_denied}% />
-          <TooltipItem label="Detainable Offense Cases with No Petition Filed" value={data.detention_eligible_no_petition_filed}% />
+          <TooltipItem label="Number of Detainable Cases" value={data.detained_cases} />
+          <TooltipItem label="Not Petitioned" value={data.detention_eligible_cases_detained*100}% />
+          <TooltipItem label="Petitioned Not Detained" value={data.detention_petition_filed_but_denied*100}% />
+          <TooltipItem label="Detained" value={data.detention_eligible_no_petition_filed*100}% />
+          <TooltipItem label="Petition to Detain," value={data.both*100}% />
         </Tooltip>
       </Chart>
+
+
+    </div>
+    <div class="flex gap-10  justify-center sm:mb-0 mb-10 ">
+  
+      <div>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+      </svg>
+    
+      <span class="text-xs">Less {swarmDescription}</span>
+    
+    </div>  
+    
+      <span class="sm:text-md  text-sm mt-4 font-semibold  ">Percent of Cases {swarmDescription} by County</span>
+    
+      <div>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      
+        <span class=text-xs>More {swarmDescription}</span>
+      </div>  
+    
     </div>
 
     <div class="h-[900px] pr-20 pl-0 sm:hidden   z-index-10  ">
       <Chart
         data={data}
-        y={(d) => d.detention_eligible_cases_detained}
+        y={(d) => d.both}
         yNice
-        yDomain={[0, 100]}       
-        padding={{ top: 12, left: 2,right: 24 }}
+        yDomain={[0, 1]}       
+        padding={{ top: 12, left: 2,right: 6 }}
         let:yGet
         let:height
         let:tooltip
@@ -364,15 +434,16 @@
         </Svg>
      
   
-        <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100'  let:data>           
-          <TooltipItem label="Number of Cases" value={data.size} />
-          <TooltipItem label="Detainable Offense Cases Detained" value={data.detention_eligible_cases_detained}% />
-          <TooltipItem label="Detention Petition Filed But Not Detained" value={data.detention_petition_filed_but_denied}% />
-          <TooltipItem label="Detainable Offense Cases with No Petition Filed" value={data.detention_eligible_no_petition_filed}% />
+        <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100 max-w-[200px]'  let:data>           
+          <TooltipItem label="Number of Detainable Cases" value={data.size} />
+          <TooltipItem label="Not Petitioned" value={data.detention_eligible_cases_detained*100}% />
+          <TooltipItem label="Petitioned Not Detained" value={data.detention_petition_filed_but_denied*100}% />
+          <TooltipItem label="Detained" value={data.detention_eligible_no_petition_filed*100}% />
         </Tooltip>
       </Chart>
     </div>
   </div>
+
   
   <div class="mt-20"></div>
 
@@ -455,39 +526,14 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 
 <TextBlock>
 
+  <ul class="list-disc space-y-2">
 
     <li>
     <b class="text-lg font-bold">Length of Stay.</b> We noted a decline in the proportion of the jail population held for short periods, and an increase in the proportion held for longer periods.
     </li>
-  </TextBlock>
-
-</Block>
-<div class="max-w-[1400px] mx-auto  mt-[100px] sm:pr-0 sm:pl-0 pl-10 pr-10"></div>
-    <div class='grid sm:grid-cols-2 grid-cols-1 gap-x-[300px] gap-y-10 mt-20'>
-
-      <div class='sm:w-[450px] w-full '>
-        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-rIwR3" src="https://datawrapper.dwcdn.net/rIwR3/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="385" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-        </script>
-      </div>
-      <div class='sm:w-[450px] w-full '>
-        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-njlrO" src="https://datawrapper.dwcdn.net/njlrO/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="384" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-        </script>
-      </div>
-
-      <div class='sm:w-[450px] w-full '>
-        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-xvkDA" src="https://datawrapper.dwcdn.net/xvkDA/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="384" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-        </script>
-      </div>
-
-      <div class='sm:w-[450px] w-full '>
-        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-XQwAj" src="https://datawrapper.dwcdn.net/XQwAj/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="384" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-        </script>
-      </div>
-</div>
-<Block>
     <li>
       <b class="text-lg font-bold">Offense Mix.</b> At least in Cook County, we noted a large increase in the proportion of the jail population charged with person and weapon offenses, and a decrease in the proportion held for drug, DUI, property, and public order offenses.
-
+</TextBlock>
 
 <TextBlock>
   <div class="mb-10 mt-10">

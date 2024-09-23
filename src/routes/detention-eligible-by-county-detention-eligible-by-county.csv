@@ -1,76 +1,33 @@
-county,size,detention_eligible_cases_detained,detention_petition_filed_but_denied,detention_eligible_no_petition_filed
-Alexander,29,28,3,69
-Jackson,342,29,15,56
-Johnson,4,50,25,25
-Massac,57,39,4,58
-Pope,7,14,0,86
-Pulaski,22,23,4,73
-Saline,130,36,14,50
-Union,40,36,15,49
-Williamson,434,21,12,67
-Crawford,83,66,6,27
-Richland,53,81,8,11
-Lawrence,78,38,8,54
-Wayne,45,45,16,39
-Edwards,19,63,5,32
-Wabash,41,63,15,22
-Jefferson,137,38,15,46
-Franklin,166,49,8,43
-Hamilton,19,53,21,26
-White,77,39,29,32
-Gallatin,18,28,11,61
-Hardin,7,43,0,57
-Bond,49,84,41,24
-Christian,113,27,14,58
-Clay,52,71,6,23
-Clinton,57,47,9,44
-Effingham,101,31,6,63
-Fayette,84,55,17,28
-Jasper,31,58,3,39
-Marion,191,38,28,24
-Montgomery,118,39,18,42
-Shelby,51,47,12,41
-Christian,47,19,4,77
-Coles,150,65,45,10
-Cumberland,30,54,29,18
-Edgar,74,14,7,79
-Vermilion,568,39,35,26
-Champagin,979,31,20,49
-DeWitt,48,27,29,44
-Douglas,64,44,31,25
-Moultrie,40,43,30,28
-Piatt,25,32,12,56
-Greene,28,50,18,32
-Jersey,52,52,31,17
-Macoupin,169,61,4,36
-Scott,8,50,0,50
-Brown,5,20,0,80
-Calhoun,15,60,27,13
-Cass,29,34,21,45
-Mason,23,33,14,52
-Menard,26,58,8,35
-Pike,39,64,13,23
-Schuyler,7,43,14,43
-Marshall,17,18,35,47
-Peoria,139,56,20,24
-Putnam,4,50,0,50
-Stark,8,50,0,50
-Livingston,146,51,29,20
-Ford,38,26,11,63
-Logan,126,22,15,63
-Will,1134,36,33,31
-Bureau,59,25,8,66
-Grundy,112,25,13,62
-LaSalle,267,13,4,83
-Henry,152,44,35,21
-Mercer,52,44,29,27
-Whiteside,110,28,19,53
-Ogle,11,33,50,17
-Stephenson,97,40,35,25
-St. Clair,652,57,40,3
-Iroquois,49,8,16,76
-Kankakee,311,43,33,24
-Monroe,56,27,25,48
-Perry,43,49,14,37
-Randolph,115,25,33,42
-Washington,34,18,24,59
+county,size,detention_eligible_no_petition_file,detention_petition_filed_but_denied,detention_eligible_cases_detained 
+Boone County,158,0.47,0.18,0.35
+Champaign County,859,0.47,0.21,0.32
+Christian County,107,0.62,0.12,0.26
+Coles County,162,0.05,0.40,0.56
+Cook County,14646,0.73,0.10,0.16
+Effingham County,105,0.70,0.04,0.27
+Franklin County,165,0.48,0.08,0.44
+Fulton County,161,0.40,0.37,0.23
+Grundy County,119,0.62,0.13,0.25
+Henry County,166,0.37,0.32,0.31
+Jackson County,352,0.55,0.14,0.31
+Jefferson County,113,0.37,0.19,0.43
+Kankakee County,315,0.17,0.37,0.46
+Knox County,366,0.61,0.15,0.24
+LaSalle County,274,0.85,0.04,0.11
+Livingston County,164,0.40,0.21,0.40
+Logan County,102,0.57,0.18,0.25
+Macoupin County,158,0.56,0.02,0.42
+Marion County,212,0.47,0.25,0.28
+Montgomery County,112,0.45,0.16,0.39
+Ogle County,142,0.32,0.38,0.30
+Peoria County,157,0.28,0.19,0.53
+Randolph County,111,0.53,0.29,0.18
+Richland County,115,0.76,0.04,0.20
+Saline County,133,0.56,0.13,0.32
+St. Clair County,680,0.13,0.36,0.51
+Stephenson County,120,0.27,0.34,0.39
+Vermilion County,514,0.20,0.36,0.44
+White County,100,0.39,0.31,0.30
+Whiteside County,110,0.54,0.18,0.28
+Will County,1105,0.33,0.33,0.35
+Williamson County,415,0.68,0.11,0.20
