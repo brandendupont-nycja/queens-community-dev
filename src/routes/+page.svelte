@@ -387,7 +387,7 @@ function both() {
     <div class="h-[800px] pr-20 pl-0 sm:hidden   z-index-10  ">
       <Chart
         data={data}
-        y={swarmChart}
+        y={(d) => d.both}
         yNice
         yDomain={[0, 1]}       
         padding={{ top: 12, left: 2,right: 6 }}
