@@ -256,7 +256,7 @@ function both() {
     <div class=" mb-4 mt-2">In some counties, over 70% of defendants charged with detainable offense faced a petition to detain, while in other counties less than 30% faced a petition to detain. </div>
     <div class="inline-block align-middle">Each  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#02AEFF" class="size-4 inline-block align-middle">
       <path  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm3 10.5a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5h6Z"  />
-    </svg>   is an Illinois county scaled by the number of detainable cases.</div>
+    </svg>   is one of 32 Illinois county scaled by the number of detainable cases with >100 cases.</div>
   </div>
 
 
@@ -665,7 +665,8 @@ Analysis of court data from 22 counties indicates that overall FTA warrant rates
 </h2>
 
 <TextBlock>
-  While we lack the data needed for a causal analysis at this point, we can say at least that crime in Illinois did not go up following PFA implementation. In fact, reported violent and property crime declined in rural counties and in Cook and other large counties, though not in every county. Using data collected by the Illinois State Police through the National Incident Based Reporting System (NIBRS), we compared reported crime in each of Illinois’ counties during the first six months of 2023 (before the PFA) with crime reported during the first six months of 2024 (after the PFA). <PopOver number={"[34]"} >The analysis was based on data pulled from the State Police system on Sept 3, 2024. Because of incomplete reporting, 17 of Illinois’ 102 counties were excluded from the analysis.</PopOver > The statewide volume of reported crimes declined 12% between the two periods. Violent crime declined 7%, and property crime declined 14%. 
+  While we lack the data needed for a causal analysis at this point, we can say at least that crime in Illinois did not go up following PFA implementation. In fact, reported violent and property crime declined in rural counties and in Cook and other large counties, though not in every county. Using data collected by the Illinois State Police through the National Incident Based Reporting System (NIBRS), we compared reported crime in each of Illinois’ counties during the first six months of 2023 (before the PFA) with crime reported during the first six months of 2024 (after the PFA). <PopOver number={"[34]"} >The analysis was based on data pulled from the Illinois State Police’s <a class="text-main hover:font-underline" href={"https://ilucr.nibrs.com/Report/GroupACrimeReport"}>NIBRS Group A Offense Report</a> for each individual county on September 9, 2024. Because of incomplete reporting, 17 of Illinois’ 102 counties were excluded from the analysis. In Cook County, the total combined violent and property offenses reported to the police decreased 16% during the period examined, while in urban areas outside of Cook County it fell 4% and in rural counties it fell 3%.
+  </PopOver > The statewide volume of reported crimes declined 11% between the two periods. Violent crime declined 7%, and property crime declined 14%. 
 </TextBlock>
   
 <TextBlock>
