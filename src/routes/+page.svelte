@@ -58,6 +58,7 @@ function both() {
 
  </script>
 
+
 <HeroImage />
 
 <div class="sm:sticky xl:top-[1vh] 2xl:top-[10vh] z-50 sm:float-right float-none md:block hidden ">
