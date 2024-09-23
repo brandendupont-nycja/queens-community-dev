@@ -455,14 +455,39 @@ We analyzed pre- and post-PFA court data from 22 Illinois counties <PopOver numb
 
 <TextBlock>
 
-  <ul class="list-disc space-y-2">
 
     <li>
     <b class="text-lg font-bold">Length of Stay.</b> We noted a decline in the proportion of the jail population held for short periods, and an increase in the proportion held for longer periods.
     </li>
+  </TextBlock>
+
+</Block>
+<div class="max-w-[1400px] mx-auto  mt-[100px] sm:pr-0 sm:pl-0 pl-10 pr-10"></div>
+    <div class='grid sm:grid-cols-2 grid-cols-1 gap-x-[300px] gap-y-10 mt-20'>
+
+      <div class='sm:w-[450px] w-full '>
+        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-rIwR3" src="https://datawrapper.dwcdn.net/rIwR3/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="385" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+      </div>
+      <div class='sm:w-[450px] w-full '>
+        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-njlrO" src="https://datawrapper.dwcdn.net/njlrO/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="384" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+      </div>
+
+      <div class='sm:w-[450px] w-full '>
+        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-xvkDA" src="https://datawrapper.dwcdn.net/xvkDA/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="384" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+      </div>
+
+      <div class='sm:w-[450px] w-full '>
+        <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-XQwAj" src="https://datawrapper.dwcdn.net/XQwAj/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="384" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+      </div>
+</div>
+<Block>
     <li>
       <b class="text-lg font-bold">Offense Mix.</b> At least in Cook County, we noted a large increase in the proportion of the jail population charged with person and weapon offenses, and a decrease in the proportion held for drug, DUI, property, and public order offenses.
-</TextBlock>
+
 
 <TextBlock>
   <div class="mb-10 mt-10">
@@ -605,4 +630,19 @@ Analysis of court data from 22 counties indicates that overall FTA warrant rates
 
 
 
+<Block>
+  <hr class="mt-20 text-black font-lg"/>
+  <h2 id="anchor-acknowledgements" class="text-4xl font-semibold pt-20 pb-4">
+    
+    Acknowledgements
+      </h2>
+<TextBlock>
+  A special thank you to the Loyola Chicago Center for Criminal Justice fellows and students for their assistance in this report. Jannah Abu-Khalil, Anna Bryant, Patrick Carabell, Stefan Cetenovic, Hannah Eure, Kenzie Gallivan, Grace Gattorno, Elena Hoeferle, Taylor Holzman, Alishba Kamran, Martyna Malecka, Abbie Romanowski, Patrick Taylor, Eva Platz-Walker, and Jack Wolff did invaluable work collecting court observations, cleaning transcriptions, and working with administrative data.
+  
+</TextBlock>
+
+<TextBlock>
+  This research is supported by Award No. 15PNIJ-21-GG-02807-RESS awarded by the National Institute of Justice, Office of Justice Programs, U.S. Department of Justice. The opinions, findings, and conclusions or recommendations expressed in this publication are those of the authors and do not necessarily reflect those of the Department of Justice. This research is also generously supported by The MacArthur Foundation and Arnold Ventures.
+</TextBlock>
+</Block>
 
