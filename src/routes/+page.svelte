@@ -383,7 +383,7 @@ function both() {
     
     </div>
 
-    <div class="h-[900px] pr-20 pl-0 sm:hidden   z-index-10  ">
+    <div class="h-[800px] pr-20 pl-0 sm:hidden   z-index-10  ">
       <Chart
         data={data}
         y={(d) => d.both}
@@ -407,7 +407,7 @@ function both() {
               y: yForce.y((d) => yGet(d)),
               x: xForce.x(height / 8),
               collide: collideForce.radius(d => rScale(d.size)+1),
-              charge: forceManyBody().strength(4),
+              charge: forceManyBody().strength(6),
             }}
             static={true}
             cloneData
@@ -434,7 +434,7 @@ function both() {
         </Svg>
      
   
-        <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100 max-w-[200px]'  let:data>           
+        <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100 max-w-1/2'  let:data>           
           <TooltipItem label="Number of Detainable Cases" value={Math.round(data.detained_cases)} />
           <TooltipItem label="Not Petitioned" value={Math.round(data.detention_eligible_cases_detained*100)}% />
           <TooltipItem label="Petitioned Not Detained" value={Math.round(data.detention_petition_filed_but_denied*100)}% />
