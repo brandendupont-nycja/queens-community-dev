@@ -256,7 +256,7 @@ function both() {
     <div class=" mb-4 mt-2">In some counties, over 70% of defendants charged with detainable offense faced a petition to detain, while in other counties less than 30% faced a petition to detain. </div>
     <div class="inline-block align-middle">Each  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#02AEFF" class="size-4 inline-block align-middle">
       <path  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm3 10.5a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5h6Z"  />
-    </svg>   is one of 32 Illinois county scaled by the number of detainable cases with >100 cases.</div>
+    </svg>   is one of 32 Illinois counties with >100 cases scaled by the number of detainable cases.</div>
   </div>
 
 
@@ -348,11 +348,11 @@ function both() {
   
   
         <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100'  let:data>           
-          <TooltipItem label="Number of Detainable Cases" value={data.detained_cases} />
-          <TooltipItem label="Not Petitioned" value={data.detention_eligible_cases_detained*100}% />
-          <TooltipItem label="Petitioned Not Detained" value={data.detention_petition_filed_but_denied*100}% />
-          <TooltipItem label="Detained" value={data.detention_eligible_no_petition_filed*100}% />
-          <TooltipItem label="Petition to Detain," value={data.both*100}% />
+          <TooltipItem label="Number of Detainable Cases" value={Math.round(data.detained_cases)} />
+          <TooltipItem label="Not Petitioned" value={Math.round(data.detention_eligible_cases_detained*100)}% />
+          <TooltipItem label="Petitioned Not Detained" value={Math.round(data.detention_petition_filed_but_denied*100)}% />
+          <TooltipItem label="Detained" value={Math.round(data.detention_eligible_no_petition_filed*100)}% />
+          <TooltipItem label="Petition to Detain," value={Math.round(data.both*100)}% />
         </Tooltip>
       </Chart>
 
@@ -435,10 +435,11 @@ function both() {
      
   
         <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100 max-w-[200px]'  let:data>           
-          <TooltipItem label="Number of Detainable Cases" value={data.size} />
-          <TooltipItem label="Not Petitioned" value={data.detention_eligible_cases_detained*100}% />
-          <TooltipItem label="Petitioned Not Detained" value={data.detention_petition_filed_but_denied*100}% />
-          <TooltipItem label="Detained" value={data.detention_eligible_no_petition_filed*100}% />
+          <TooltipItem label="Number of Detainable Cases" value={Math.round(data.detained_cases)} />
+          <TooltipItem label="Not Petitioned" value={Math.round(data.detention_eligible_cases_detained*100)}% />
+          <TooltipItem label="Petitioned Not Detained" value={Math.round(data.detention_petition_filed_but_denied*100)}% />
+          <TooltipItem label="Detained" value={Math.round(data.detention_eligible_no_petition_filed*100)}% />
+          <TooltipItem label="Petition to Detain," value={Math.round(data.both*100)}% />
         </Tooltip>
       </Chart>
     </div>

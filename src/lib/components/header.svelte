@@ -16,7 +16,7 @@
 <div class="flex flex-col justify-between bg-black h-[126px]">
     <div class="mt-8  border-t-2 border-white ">
   </div>
-      <header class="flex items-center justify-between xl:ml-32 xl:mr-32 ml-10 mr-10  sm:mb-0">
+      <header class="flex items-center justify-between 2xl:ml-32 2xl:mr-32 ml-10 mr-10  sm:mb-0">
         
         <div>
           <a href="https://loyolaccj.org" >
