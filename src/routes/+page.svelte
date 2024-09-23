@@ -33,26 +33,31 @@
 
 
 let swarmChart = (d) => d.both
+let mobileSwarmChart = (d) => d.both
 let swarmDescription = "Petition to Detain"
 let isSelected = 1
 
 function not_petitioned() {
   swarmChart =  (d) => d.detention_eligible_cases_detained;
+  mobileSwarmChart =  (d) => d.detention_eligible_cases_detained;
   swarmDescription = "Not Petitioned" 
   isSelected = 2
 }
 function petitioned_not_detained() {
   swarmChart =  (d) => d.detention_petition_filed_but_denied;
+  mobileSwarmChart =  (d) =>  d.detention_petition_filed_but_denied;
   swarmDescription = "Petition Not Detained"
   isSelected = 3
 }
 function detained() {
   swarmChart =  (d) => d.detention_eligible_no_petition_filed;
+  mobileSwarmChart =  (d) =>  d.detention_eligible_no_petition_filed;
   swarmDescription = "Detained"
   isSelected = 4
 }
 function both() {
   swarmChart =  (d) => d.both;
+  mobileSwarmChart =  (d) =>  d.both;
   swarmDescription = "Petition to Detain";
   isSelected = 1}
 
@@ -263,8 +268,9 @@ function both() {
 
   <div>
 
-  <div class="grid place-content-center mb-10 mt-10 ">
-  <span class="inline-flex  rounded-md border bg-white shadow-sm ">
+    <div class="sm:block hidden">
+  <div class="grid place-content-center mb-10 mt-10   ">
+  <span class="inline-flex  rounded-md border bg-white shadow-sm  ">
     <button
       class="inline-block border-black border-e sm:px-8 sm:py-2 sm:text-sm px-4 py-2 border-2 text-xs font-medium  { isSelected === 1 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
       on:click={both}
@@ -292,6 +298,7 @@ function both() {
   
 
   </span>
+</div>
 </div>
 
 </div>
@@ -667,7 +674,7 @@ Analysis of court data from 22 counties indicates that overall FTA warrant rates
 </h2>
 
 <TextBlock>
-  While we lack the data needed for a causal analysis at this point, we can say at least that crime in Illinois did not go up following PFA implementation. In fact, reported violent and property crime declined in rural counties and in Cook and other large counties, though not in every county. Using data collected by the Illinois State Police through the National Incident Based Reporting System (NIBRS), we compared reported crime in each of Illinois’ counties during the first six months of 2023 (before the PFA) with crime reported during the first six months of 2024 (after the PFA). <PopOver number={"[34]"} >The analysis was based on data pulled from the Illinois State Police’s <a class="text-main hover:font-underline" href={"https://ilucr.nibrs.com/Report/GroupACrimeReport"}>NIBRS Group A Offense Report</a> for each individual county on September 9, 2024. Because of incomplete reporting, 17 of Illinois’ 102 counties were excluded from the analysis. In Cook County, the total combined violent and property offenses reported to the police decreased 16% during the period examined, while in urban areas outside of Cook County it fell 4% and in rural counties it fell 3%.
+  While we lack the data needed for a causal analysis at this point, we can say at least that crime in Illinois did not go up following PFA implementation. In fact, reported violent and property crime declined in rural counties and in Cook and other large counties, though not in every county. Using data collected by the Illinois State Police through the National Incident Based Reporting System (NIBRS), we compared reported crime in each of Illinois’ counties during the first six months of 2023 (before the PFA) with crime reported during the first six months of 2024 (after the PFA). <PopOver number={"[34]"} >The analysis was based on data pulled from the Illinois State Police’s <a class="text-main hover:font-underline" href={"https://ilucr.nibrs.com/Report/GroupACrimeReport"}>NIBRS Group A Offense Report</a> for each individual county on September 17, 2024. Because of incomplete reporting, 17 of Illinois’ 102 counties were excluded from the analysis. In Cook County, the total combined violent and property offenses reported to the police decreased 16% during the period examined, while in urban areas outside of Cook County it fell 4% and in rural counties it fell 3%.
   </PopOver > The statewide volume of reported crimes declined 11% between the two periods. Violent crime declined 7%, and property crime declined 14%. 
 </TextBlock>
   
