@@ -283,7 +283,7 @@ function both() {
     Petitioned Not Detained
     </button>
     <button
-    class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2 border-e text-sm font-medium { isSelected === 4 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+    class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2  border-l text-sm font-medium { isSelected === 4 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
     on:click={detained}
     >
     Detained

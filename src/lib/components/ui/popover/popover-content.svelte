@@ -13,7 +13,7 @@
 	{transition}
 	{transitionConfig}
 	class={cn(
-		"bg-popover text-popover-foreground z-50  rounded-md border p-4 bg-gray-50 shadow-xs hover:shadow-lg border-r-[7px] border-b-[7px] border-black border-2 rounded-lg transition duration-300 ease-in-out -translate-y-1 translate-x-10 max-w-[450px]",
+		"bg-popover text-popover-foreground z-50  rounded-md border p-4 bg-gray-50 shadow-xs hover:shadow-lg border-r-[7px] border-b-[7px] border-black border-2 rounded-lg transition duration-300 ease-in-out sm:-translate-y-1 sm:translate-x-10 w-5/6 sm:max-w-[450px]",
 		className
 	)}
 	{...$$restProps}
