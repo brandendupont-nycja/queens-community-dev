@@ -12,13 +12,13 @@ import logo from '$lib/assets/images/capitol.jpg';
 <div class="max-w-4xl  lg:max-w-full sm:pb-[100px]" >
   
 
-    <section class="overflow-hidden bg-black sm:grid sm:grid-cols-2 ">
+    <section class="overflow-hidden bg-black lg:grid lg:grid-cols-2 ">
       <div class="relative sm:hidden">
       <img
       alt="Image of the Illinois State Capitol by Andrew Adams"
       src={logo }
       aria-label="Image of the Illinois State Capitol by Andrew Adams"
-      class="sm:h-[500px] w-full h-[200px] sm:hidden  sm:h-[620px]"
+      class=" w-full h-[200px] sm:hidden "
     />
     <div class="absolute bottom--6 right-2  ">
     <div class="text-white text-[8px] floating-right sm:block"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
@@ -28,7 +28,7 @@ import logo from '$lib/assets/images/capitol.jpg';
         
         <div class="sm:mt-10">
         <div class="mx-auto max-w-xl grid sm:text-left">
-          <h2 class="font-mono  text-white  md:text-5xl text-4xl font-sans mb-6 ">
+          <h2 class="font-mono  text-white  xl:text-5xl  text-4xl font-sans mb-6 ">
             The First Year of the Pretrial Fairness Act
           </h2>
           <p class="text-gray-300 sm:text-base  text-sm">
@@ -72,7 +72,7 @@ import logo from '$lib/assets/images/capitol.jpg';
         alt="Image of the Illinois State Capitol by Andrew Adams"
         src={logo }
         aria-label="Image of the Illinois State Capitol by Andrew Adams"
-        class=" w-full   sm:h-[620px]"
+        class=" w-full   md:h-[450px] lg:h-[450px] xl:h-[620px] 2xl:h-[650px]"
       />
       <div class="absolute bottom-2 right-2  ">
       <div class="text-white text-xs floating-right"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
