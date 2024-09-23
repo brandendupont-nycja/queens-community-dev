@@ -13,6 +13,7 @@
   import TextBlock from './../lib/components/text.svelte';
   import AccordianBlock from './../lib/components/accordianBlock.svelte';
   import PopOver from './../lib/components/popover.svelte';
+  import PopOverMobile from './../lib/components/popoverMobile.svelte';
   import Sidebar from './../lib/components/sidebar.svelte';
   import Menu from './../lib/components/collapsiblemenu.svelte';
   
@@ -73,7 +74,7 @@ function both() {
 <div class=" sm:hidden sticky top-0 z-50">
   <div class="flex items-center justify-between space-x-4 pr-4 bg-black mb-10 ">
     <h4 class="text-sm font-semibold text-white p-3 font-mono">Navigate the Report</h4>
-    <Sidebar></Sidebar>      
+    <PopOverMobile />     
 
    </div>
 </div>
