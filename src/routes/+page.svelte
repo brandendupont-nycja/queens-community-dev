@@ -347,6 +347,8 @@ function both() {
                 class="stroke-surface-100  hover:stroke-black "
                 on:pointermove={(e) => tooltip.show(e, node)}
                 on:pointerleave={tooltip.hide}
+                tweened={{duration:550}}
+
               />
   
             {/each}
@@ -434,6 +436,7 @@ function both() {
                 class="stroke-surface-100  hover:stroke-black "
                 on:pointermove={(e) => tooltip.show(e, node)}
                 on:pointerleave={tooltip.hide}
+                motion
               />
   
             {/each}
