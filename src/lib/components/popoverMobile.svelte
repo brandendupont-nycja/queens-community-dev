@@ -1,7 +1,17 @@
 <script lang="ts">
     import { Button } from "$lib/components/ui/button/index.js";
     import * as Popover from "$lib/components/ui/popover/index.js";
-    export let number
+
+    function handleAnchorClick (event) {
+		event.preventDefault()
+		const link = event.currentTarget
+		const anchorId = new URL(link.href).hash.replace('#', '')
+		const anchor = document.getElementById(anchorId)
+		window.scrollTo({
+			top: anchor.offsetTop,
+			behavior: 'smooth'
+		})
+	}
 </script>
     
    <Popover.Root portal={null}>
@@ -15,61 +25,60 @@
 
         <div class="space-y-1 text-white overflow-y-auto">
             <div class="border-b border-t border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-                
-                <a href="#anchor-pfa-background" >
+        
+                <a href="#anchor-pfa-background" on:click={handleAnchorClick}>
                     PFA Background
                 </a>
                 </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-                <a href="#anchor-loyola-evaluation" >
+                <a href="#anchor-loyola-evaluation" on:click={handleAnchorClick}>
                  Loyola Center for Criminal Justice’s Evaluation
                 </a>
              </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-prior-findings" >
+              <a href="#anchor-prior-findings" on:click={handleAnchorClick}>
                  Prior Evaluation Findings
               </a>
            </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-pretrial-decision-change" >
+              <a href="#anchor-pretrial-decision-change" on:click={handleAnchorClick}>
                  How Has Pretrial Hearing and Decision-Making Practice Changed Under the PFA?
               </a>
              </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-               <a href="#anchor-eligible-detention-detained" >
+               <a href="#anchor-eligible-detention-detained" on:click={handleAnchorClick}>
                  Who is Eligible for Detention and Who is Being Detained Under the PFA?
               </a>
              </div>
              <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-detention-release-changed" >
+              <a href="#anchor-detention-release-changed" on:click={handleAnchorClick}>
                  How Have Detention and Release Rates Changed under the PFA?
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-jail-pretrial-change" >
+              <a href="#anchor-jail-pretrial-change" on:click={handleAnchorClick}>
                  How Have Jail and Pretrial Supervision Populations Changed Under the PFA?
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-pretrial-supervision" >
+              <a href="#anchor-pretrial-supervision" on:click={handleAnchorClick}>
                  Pretrial Supervision
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-electronic-monitoring" >
+              <a href="#anchor-electronic-monitoring" on:click={handleAnchorClick}>
                  Electronic Monitoring
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-fta" >
+              <a href="#anchor-fta" on:click={handleAnchorClick}>
                  How Has Hearing Attendance Changed Under the PFA?
              </a>
             </div>
             <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-              <a href="#anchor-crime" >
+              <a href="#anchor-crime" on:click={handleAnchorClick}>
                  What Can We Say About Crime and Public Safety Under the PFA So Far?
              </a>
-            </div>
         
         </div>
     </Popover.Content>
