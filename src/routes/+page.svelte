@@ -387,7 +387,7 @@ function both() {
     <div class="h-[800px] pr-20 pl-0 sm:hidden   z-index-10  ">
       <Chart
         data={data}
-        y={(d) => d.both}
+        y={swarmChart}
         yNice
         yDomain={[0, 1]}       
         padding={{ top: 12, left: 2,right: 6 }}
@@ -406,9 +406,9 @@ function both() {
           <ForceSimulation
             forces={{
               y: yForce.y((d) => yGet(d)),
-              x: xForce.x(height / 8),
+              x: xForce.x(height / 6),
               collide: collideForce.radius(d => rScale(d.size)+1),
-              charge: forceManyBody().strength(6),
+              charge: forceManyBody().strength(8),
             }}
             static={true}
             cloneData
