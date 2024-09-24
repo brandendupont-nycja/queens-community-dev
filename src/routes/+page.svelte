@@ -278,12 +278,6 @@ function both() {
     >
      Petition to Detain
     </button>
-        <button
-        class="inline-block border-black border-e sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs border-2 font-medium font-medium { isSelected === 2 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
-        on:click={not_petitioned}
-      >
-      Not petitioned
-      </button>
       <button
       class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2 border-e text-sm font-medium { isSelected === 3 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
       on:click={petitioned_not_detained}
@@ -291,11 +285,17 @@ function both() {
     Petitioned Not Detained
     </button>
     <button
-    class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2  border-l text-sm font-medium { isSelected === 4 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+    class="inline-block border-black border-e sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs border-2 border-l font-medium font-medium { isSelected === 4 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
     on:click={detained}
     >
     Detained
     </button>
+    <button
+    class="inline-block  sm:px-8 sm:py-2 sm:text-sm px-4 py-2 text-xs font-medium border-black border-2   text-sm font-medium  { isSelected === 2 ? 'bg-black text-white' : 'bg-white text-black'} hover:bg-black hover:text-white focus:relative"
+    on:click={not_petitioned}
+  >
+  Not petitioned
+  </button>
   
 
   </span>
@@ -360,10 +360,10 @@ function both() {
   
         <Tooltip class='border-solid border border-black rounded-none  bg-white opacity-100'  let:data>           
           <TooltipItem label="Number of Detainable Cases" value={Math.round(data.detained_cases)} />
-          <TooltipItem label="Not Petitioned" value={Math.round(data.detention_eligible_cases_detained*100)}% />
           <TooltipItem label="Petitioned Not Detained" value={Math.round(data.detention_petition_filed_but_denied*100)}% />
           <TooltipItem label="Detained" value={Math.round(data.detention_eligible_no_petition_filed*100)}% />
           <TooltipItem label="Petition to Detain," value={Math.round(data.both*100)}% />
+          <TooltipItem label="Not Petitioned" value={Math.round(data.detention_eligible_cases_detained*100)}% />
         </Tooltip>
       </Chart>
 
