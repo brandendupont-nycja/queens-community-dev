@@ -15,7 +15,7 @@
 
 <ButtonPrimitive.Root
 	{builders}
-	class="inline-block  mr-1 text-sm font-bold tracking-wider text-main"
+	class={cn(buttonVariants({ variant, size, className }))}
 	type="button"
 	{...$$restProps}
 	on:click
@@ -23,4 +23,3 @@
 >
 	<slot />
 </ButtonPrimitive.Root>
-
