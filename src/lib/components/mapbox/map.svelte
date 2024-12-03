@@ -17,7 +17,7 @@
 
 <div class="max-w-[1200px] mx-auto mt-4 mb-20">
 <MapLibre
-  style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+  style="https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json"
   class="relative aspect-[9/16] max-h-[70vh] w-full sm:aspect-video sm:max-h-full"
   center={[-73.814817, 40.662054]}
   zoom={10.3}
