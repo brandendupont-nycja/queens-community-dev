@@ -1,33 +1,20 @@
 <script lang="ts">
   import Link from './../lib/components/link.svelte'
-  import { scaleOrdinal, scaleQuantile, scaleSqrt, scaleThreshold,  scaleBand  } from 'd3-scale'; 
-  import { geoMercator } from 'd3-geo';
-  import { feature } from 'topojson-client';
-  import { index, max } from 'd3-array';
+  import { scaleOrdinal } from 'd3-scale'; 
   import { forceX, forceY, forceCollide,  forceManyBody, forceCenter  } from 'd3-force';
-  import { Text } from 'layerchart';
-	import { cubicOut } from 'svelte/easing';
-  import { Axis, Chart, Circle, ForceSimulation, Svg, Tooltip, TooltipItem, ChartClipPath, GeoPath,  Highlight  } from 'layerchart';
   import HeroImage from "../lib/components/heroImage.svelte"
-  import ChartBlock from './../lib/components/chartBlock.svelte';
   import Block from './../lib/components/block.svelte';
   import TextBlock from './../lib/components/text.svelte';
-  import AccordianBlock from './../lib/components/accordianBlock.svelte';
-  import PopOver from './../lib/components/popover.svelte';
   import PopOverMobile from './../lib/components/popoverMobile.svelte';
   import Sidebar from './../lib/components/sidebar.svelte';
   import Menu from './../lib/components/collapsiblemenu.svelte';
   import CommunityGrants from './../lib/components/communityGrants.svelte'
-	import Scroll from "./../lib/components/ui/Scrolly.svelte";
-
-  import chart from "./chart.svelte"
-
+  import Map from './../lib/components/mapbox/map.svelte'
+  import LineLayer from 'svelte-maplibre/LineLayer.svelte';
   import Calendar from './chart.svelte?raw';
-
+  import GeoJSON from 'svelte-maplibre/GeoJSON.svelte';
 
   import viz from './viz.png';
-
-
   const categoryColor = scaleOrdinal([
     '#ffbf00',
     '#00aeff',
@@ -121,11 +108,17 @@
 </div>
 
 
+
 <Block>
   
   <TextBlock>
     <div class="first-letter:text-7xl first-letter:text-black first-letter:font-sans first-letter:pr-1 first-letter:pb-1 first-letter:float-left ">
       The District Attorney’s office has sought ways to combat the rise in retail theft that many communities around the nation have experienced in the last few years. The Queens Merchants Business Improvement Program was created in partnership with the NYPD and community stakeholders to combat the problem. The initiative seeks to combat repeat shoplifting and the threats and harassment directed at customers and store staff by the handful of individuals responsible for many of these disruptions to local businesses.
+</div>
+</TextBlock>
+
+<TextBlock>
+  <div class="first-letter:text-7xl first-letter:text-black first-letter:font-sans first-letter:pr-1 first-letter:pb-1 first-letter:float-left ">
 </div>
 </TextBlock>
 
@@ -138,6 +131,18 @@
   Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their arrest.
 </TextBlock>
 
+</Block>
+
+<h2 id="anchor-detention-release-changed" class="text-3xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[800px]">
+  Attending Over ~2,000 Events Across Queens The Community Partnerships Division Is Deeply Engaged in the Community
+</h2>
+
+
+<Map >
+</Map>
+
+
+<Block>
 <TextBlock>
   The program began in Jamaica as a pilot program in June 2021 and its success led to its expansion to Flushing and Astoria. Ultimately, District Attorney Katz expanded the program borough-wide in August 2023.
 </TextBlock>

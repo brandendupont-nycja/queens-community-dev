@@ -3,8 +3,6 @@
     import * as Carousel from "$lib/components/ui/carousel/index.js";
     import data from "$lib/components/data/grants.csv"
     import { Title } from "./ui/sheet";
-
-    console.log(data)
    </script>
     
    <Carousel.Root
