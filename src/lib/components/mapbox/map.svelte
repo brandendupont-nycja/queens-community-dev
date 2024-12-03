@@ -44,7 +44,7 @@
 <GeoJSON id="queens" data={queens} >
     <LineLayer
     layout={{ 'line-cap': 'round', 'line-join': 'round' }}
-    paint={{ 'line-color': borderColor, 'line-width': 3 }}
+    paint={{ 'line-color': borderColor, 'line-width': 1 }}
   />
   </GeoJSON>
 
