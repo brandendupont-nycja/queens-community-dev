@@ -24,7 +24,7 @@
   standardControls
 >
 {#each MarkerData as { Longitude, Latitude, Event, Location } }
-{console.log(Longitude)}
+
 
 {@const lngLat = [Longitude,Latitude]}
 
@@ -36,7 +36,7 @@
 
 
   <Popup openOn="hover" offset={[0, -10]}>
-    <div class="text-lg font-bold max-w-[300px]">{Event}</div>
+    <div class="text-lg font-bold max-w-[300px]">{Event}:{Location}</div>
   </Popup>
 </Marker>
 {/each}

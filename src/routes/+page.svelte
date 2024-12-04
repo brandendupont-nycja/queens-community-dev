@@ -13,7 +13,7 @@
   import LineLayer from 'svelte-maplibre/LineLayer.svelte';
   import Calendar from './chart.svelte?raw';
   import GeoJSON from 'svelte-maplibre/GeoJSON.svelte';
-
+  import Calendar2 from './../lib/components/charts/calendar.svelte';
   import viz from './viz.png';
   const categoryColor = scaleOrdinal([
     '#ffbf00',
@@ -164,10 +164,10 @@
   
   
   
-  <div class="mx-auto max-w-1800px flex justify-center pt-10 pb-10 pl-48">
-    {@html Calendar}
+  <div class="pt-20 ">
+    <Calendar2 />
   </div>
-  
+
 
  
 
