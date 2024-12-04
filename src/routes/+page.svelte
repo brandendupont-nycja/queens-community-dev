@@ -216,7 +216,7 @@ of funding by my office.”
 
 
 <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
-  Queen's Hope and Leadership Program Is in Every School District
+  Queen's Youth Empowerment Unit Is in Every School District
 </h2>
 
 <TextBlock>
