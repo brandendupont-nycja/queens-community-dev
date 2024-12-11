@@ -22,7 +22,7 @@
 
     let currentStep;
     const steps = [    "<p>This chart depicts defendant's that have been served with trespass notices under the Queens Merchants Business Improvement Program.</p>", "<p> We conducted an initial analysis of this program's effectiveness. To do so, we selected 174 individuals served with trespass notices who had been subject to the tresspass notice for at least up to one year. This gives us enough time to get a sense of arrest patterns under this program. </p>", 
-     "<p>We find that 87% of individuals have been served with trespass notices and are not arrested at that same location again. </p>",  "<p>Conversely, 13% are rearrested at the same location. Business's can now partner with law enforcement and the Queen's DA's office to address recidivist's who continue to steal from the same location. </p>"];
+     "<p>We find that 87% of individuals have been served with trespass notices and are not arrested at that same location again. </p>",  "<p>Conversely, 13% are rearrested at the same location. Business's can now partner with law enforcement and the Queens DA's office to address recidivist's who continue to steal from the same location. </p>"];
 
   
 
@@ -132,7 +132,7 @@
 </Block>
 
 <h2 id="anchor-detention-release-changed" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
-  Attending Over ~2,000 Events Across Queens The Community Partnerships Division Is Deeply Engaged in the Community
+  Attending Over ~2,000 Events Across Queens, The Community Partnerships Division Is Deeply Engaged in the Community
 </h2>
 
 
@@ -146,7 +146,7 @@
 
 
   <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4 mt-10">
-    Since 2021 the Queen's DA's Office Has A Large and Active Presence In the Community 
+    Since 2021 the Queens DA's Office Has A Large and Active Presence In the Community
   </h2>
 
 <TextBlock>
@@ -163,7 +163,7 @@
   
   <div class="pt-10 ">
     <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[800px]">
-      Every week of the year the Queen's DA's Office is in the community
+      Every week of the year the Queens DA's Office is in the community
     </h2>
     <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[800px]">
       The calendar shows daily events attended by the Queen's Community Partnership Division. And details the the time committment the office invests in being accessible to the community.
@@ -176,15 +176,9 @@
 
 <Block>
 
-  <TextBlock>
-    Unlike many communities that have historically been wary of prosecutors, DA Katz’s 30-year
-    career as a public servant in Queens has given her a deep understanding of residents’
-    concerns. This experience has enabled her to build trust and encourage community members to
-    interact with the District Attorney’s office with confidence.
-    </TextBlock>
 
     <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
-      The Queen's DA's Office Invests Millions in Youth Development and Crime Prevention
+      The Queens DA's Office Invests Millions in Youth Development and Crime Prevention
     </h2>
 <TextBlock>
   A prosecutor’s office has a broader role in the community than simply processing cases. As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life. In addition to engaging the community through through community events, The Queens District Attorney’s Office also supports the community through Violence Prevention and Youth Development Grants.
