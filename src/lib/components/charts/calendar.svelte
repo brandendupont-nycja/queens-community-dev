@@ -1,11 +1,11 @@
 <script lang="ts">
 import { startOfYear, endOfYear } from 'date-fns';
-import { scaleThreshold } from 'd3-scale';
+import { scaleThreshold, scaleOrdinal } from 'd3-scale';
 import { range } from 'd3-array';
 import { addMinutes, startOfDay, startOfToday, subDays } from 'date-fns';
 import { cumsum } from 'd3-array';
 import { Calendar, Chart, Group, Text, Tooltip, Svg } from 'layerchart';
-
+import { Legend } from 'layerchart';
 
 
 const now = new Date();
@@ -64,27 +64,42 @@ const data2 = createDateSeries({ count: 365 * 5, min: 10, max: 100, value: 'inte
 const data3 = [{date: new Date("2024-01-02"), value:1 },
 {date:new Date("2024-01-03"), value:2 } 
 ]
-{console.log(data3)}
-{console.log(data2)}
-{console.log(data)}
+
 </script>
 
   
-  <div class="mx-auto max-w-[800px]">
+  <div class="mx-auto max-w-[900px] mb-4">
 
 
-  <div class="h-[700px] p-4  rounded ">
+  <div class="h-[650px] pl-4 rounded ">
+    <div class="grid gap-6 pb-6 pl-10">
+      <Legend
+        scale={scaleOrdinal(
+          [
+            "1-2",
+            "3-4",
+            "5+",
+          ],
+          [
+        "#bfdaf6",
+        "#84c3fb",
+        "#00aeff",
+      ],
+        )}
+        title="Number of Community Events"
+        variant="swatches"
+        classes={{ swatch: "rounded" }}
+      />
+    </div>
     <Chart
       {data}
       x="date"
       c="value" 
       cScale={scaleThreshold().unknown('transparent')}
-      cDomain={[1,4,6]}
+      cDomain={[2,5,6]}
       cRange={[
         "#bfdaf6",
-        "#bfdaf6",
         "#84c3fb",
-        "#00aeff",
         "#00aeff",
       ]}
       let:tooltip
@@ -122,9 +137,18 @@ const data3 = [{date: new Date("2024-01-02"), value:1 },
           </Tooltip.List>
         {/if}
       </Tooltip.Root>
+      <Text
+      value={"Data Source: Queen's Community Engagement Tracking Sheet "}
+      textAnchor="end"
+      verticalAnchor="end"
+      class="text-xs tabular-nums text-gray-500"
+      x=355
+      y=555
+    />
 
 
  
     </Chart>
+
   </div>
 </div>

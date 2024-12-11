@@ -4,9 +4,9 @@
   import GeoJSON from 'svelte-maplibre/GeoJSON.svelte';
   import Marker from 'svelte-maplibre/Marker.svelte';
   import Popup from 'svelte-maplibre/Popup.svelte';
-
+  import { Legend } from 'layerchart';
   import MarkerData from './../mapbox/ce-data.csv'
-  
+  import { scaleThreshold, scaleOrdinal } from 'd3-scale';
   // geo data
   const queens = 'https://raw.githubusercontent.com/ebrelsford/geojson-examples/master/queens.geojson'
 
@@ -23,6 +23,27 @@
   zoom={10.3}
   standardControls
 >
+
+  <div class="absolute right-4 top-4 bg-white text-black h-[120px] w-[250px] border-2 border-black p-3">
+    <p class="font-semibold text-lg">Community Partnerships Division Event Map</p>
+    <div class="grid gap-6 mt-2">
+      <Legend
+        scale={scaleOrdinal(
+          [
+            "Represents a Community Event",
+          ],
+          [
+        "#00aeff",
+      ],
+        )}
+        title=""
+        variant="swatches"
+        classes={{ swatch: "" }}
+      />
+    </div>
+  </div>
+
+
 {#each MarkerData as { Longitude, Latitude, Event, Location } }
 
 
@@ -36,7 +57,8 @@
 
 
   <Popup openOn="hover" offset={[0, -10]}>
-    <div class="text-lg font-bold max-w-[300px]">{Event}:{Location}</div>
+    <div class="text-md font-semibold  max-w-[275px]">{Event}</div>
+    <div class="text-sm  max-w-[300px]">{Location}</div>
   </Popup>
 </Marker>
 {/each}

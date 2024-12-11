@@ -113,7 +113,7 @@
   
   <TextBlock>
     <div class="first-letter:text-7xl first-letter:text-black first-letter:font-sans first-letter:pr-1 first-letter:pb-1 first-letter:float-left ">
-      The District Attorney’s office has sought ways to combat the rise in retail theft that many communities around the nation have experienced in the last few years. The Queens Merchants Business Improvement Program was created in partnership with the NYPD and community stakeholders to combat the problem. The initiative seeks to combat repeat shoplifting and the threats and harassment directed at customers and store staff by the handful of individuals responsible for many of these disruptions to local businesses.
+      The first contact that an individual has with a prosecutor should not occur in a courtroom or during a crisis. It should happen in a welcoming environment—such as a community event—where individuals can learn about available resources and services that the prosecutors’ office has to offer. That means prosecutors getting out into the community, listening to citizens, and building long-term relationships. 
 </div>
 </TextBlock>
 
@@ -124,16 +124,14 @@
 
 
 <TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their arrest.
+  Toward this goal, the Community Partnerships Division in the Queens District Attorney’s Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens. 
+  
 </TextBlock>
 
-<TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their arrest.
-</TextBlock>
 
 </Block>
 
-<h2 id="anchor-detention-release-changed" class="text-3xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[800px]">
+<h2 id="anchor-detention-release-changed" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
   Attending Over ~2,000 Events Across Queens The Community Partnerships Division Is Deeply Engaged in the Community
 </h2>
 
@@ -141,30 +139,35 @@
 <Map >
 </Map>
 
-
 <Block>
+  <TextBlock>
+    Over the past four years, staff in the Office participated in over 2,000 public events - from community presentations on domestic violence at St. Mary & St. Antonios Coptic Orthodox Church in Ridgewood to community board meetings and precinct council meetings across the borough to community-based celebrations of Lunar New Year, Black History Month, Hispanic Heritage, Women’s History, Asian American Pacific Islander Heritage, Jewish American Heritage and more.
+  </TextBlock>
+
+
+  <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4 mt-10">
+    Since 2021 the Queen's DA's Office Has A Large and Active Presence In the Community 
+  </h2>
+
 <TextBlock>
-  The program began in Jamaica as a pilot program in June 2021 and its success led to its expansion to Flushing and Astoria. Ultimately, District Attorney Katz expanded the program borough-wide in August 2023.
+  Nearly every day of the year the District Attorney’s Office is in the community, demonstrating its ongoing commitment to strengthening positive ties with citizens. Through this approach, the office has successfully engaged the Queens community, fostering an environment where residents feel empowered to reach out to the office not just for assistance with law enforcement-related issues.
 </TextBlock>
 
 </Block>
 
 <Block>
 
-  <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
-    Since 2021 the Queen's DA's Office Has A Large and Active Presence In the Community 
-  </h2>
-  
-  <TextBlock>
-    This chart will be interactive, larger, text-wrapping, and with better resolution. Upon hovering over each square,
-    a viewer will be able to see the program overview that was funded. We can add a tab for DA speaking that only includes the calendar and counts for DA speaking.
-  </TextBlock>
-  
   </Block>
   
   
   
-  <div class="pt-20 ">
+  <div class="pt-10 ">
+    <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[800px]">
+      Every week of the year the Queen's DA's Office is in the community
+    </h2>
+    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[800px]">
+      The calendar shows daily events attended by the Queen's Community Partnership Division. And details the the time committment the office invests in being accessible to the community.
+    </div>
     <Calendar2 />
   </div>
 
@@ -172,17 +175,28 @@
  
 
 <Block>
+
+  <TextBlock>
+    Unlike many communities that have historically been wary of prosecutors, DA Katz’s 30-year
+    career as a public servant in Queens has given her a deep understanding of residents’
+    concerns. This experience has enabled her to build trust and encourage community members to
+    interact with the District Attorney’s office with confidence.
+    </TextBlock>
+
+    <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
+      The Queen's DA's Office Invests Millions in Youth Development and Crime Prevention
+    </h2>
 <TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their arrest.
+  A prosecutor’s office has a broader role in the community than simply processing cases. As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life. In addition to engaging the community through through community events, The Queens District Attorney’s Office also supports the community through Violence Prevention and Youth Development Grants.
 </TextBlock>
 
 <TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their arrest.
+  In 2024, the Office announced $2.75 million in funding for 34 community-based organizations for the second phase of the office's Community Youth Development and Crime Prevention Project (CYDCPP), which seeks to foster positive relationships between communities and law enforcement, reduce youth crime, improve young people's self-confidence, increase exposure to positive adult role models, and strengthen academic performance and school attendance. Since its inception in 2021, the program has funded over XX programs in the community.
 </TextBlock>
 
 
-<h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
-  The Queen's DA's Office Invested Over 2.7 Millions in Youth Development and Crime Prevention
+<h2 id="anchor-detention-release-changed" class="text-3xl font-semibold pt-4 pb-4">
+  X.X million Invested
 </h2>
 
 <TextBlock>
@@ -200,17 +214,6 @@ Click the right or left arrows to view the many organizations the Queens DA's of
 
 <Block>
 
-<TextBlock>
-  “This program has proven to be a resounding
-success, with more than 14,000 individual youth participants gaining
-crucial hands-on training and guidance on conflict resolution, civic
-engagement, mental health support, STEM programs, college readiness
-workshops and much more. The recipients of the funding in 2021 have
-helped to empower our youth while increasing public safety in this
-borough. I look forward to the implementation of even more wraparound
-services provided to the young people of Queens through this latest round
-of funding by my office.”
-</TextBlock>
 
 
 
@@ -220,7 +223,7 @@ of funding by my office.”
 </h2>
 
 <TextBlock>
-  Participating businesses contact police when an individual engages in disruptive, dangerous, or illegal behavior in their establishment. The responding officers can issue a trespass notice, either in conjunction with an arrest or in lieu of arrest, and warn the individual that their return to the location will result in their arrest.
+  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity. 
 </TextBlock>
 
 
@@ -230,6 +233,8 @@ of funding by my office.”
     </script>
 
 </TextBlock>
+
+
 
 
 
