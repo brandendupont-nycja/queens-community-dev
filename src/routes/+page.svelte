@@ -191,12 +191,12 @@
 </TextBlock>
 
 <TextBlock>
-  In 2024, the Office announced $2.75 million in funding for 34 community-based organizations for the second phase of the office's Community Youth Development and Crime Prevention Project (CYDCPP), which seeks to foster positive relationships between communities and law enforcement, reduce youth crime, improve young people's self-confidence, increase exposure to positive adult role models, and strengthen academic performance and school attendance. Since its inception in 2021, the program has funded over XX programs in the community.
+  In 2024, the Office announced $2.75 million in funding for 34 community-based organizations for the second phase of the office's Community Youth Development and Crime Prevention Project (CYDCPP), which seeks to foster positive relationships between communities and law enforcement, reduce youth crime, improve young people's self-confidence, increase exposure to positive adult role models, and strengthen academic performance and school attendance. Since its inception in 2021, the program has provided 5.45 million in program funding for the community.
 </TextBlock>
 
 
 <h2 id="anchor-detention-release-changed" class="text-3xl font-semibold pt-4 pb-4">
-  X.X million Invested
+  $5.45M Million Invested From 2021-2024
 </h2>
 
 <TextBlock>
