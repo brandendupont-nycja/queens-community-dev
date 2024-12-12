@@ -32,7 +32,7 @@ const logo ="https://images.unsplash.com/photo-1649956726800-af1971584a5a?q=80&w
             Across Queens, the DA Centers The Community in Public Safety
           </h2>
           <p class="text-gray-300 xl:text-base  text-sm">
-            The Queens Merchants Business Improvement Program was created in partnership with the NYPD and community stakeholders to combat the problem of repeat retail theft. Under the program, individuals suspected of retail theft are issued a trespass notice and warned that their return to the same location will result in their arrest. Since its inception, 87% of individuals served with trespass notices have not been arrested at that same location again.
+            The Queens District Attorney’s Office seeks to re-imagine the relationship between the prosecutors’ office and the residents of Queens County by being an integral part of the community. Through several community-based initiatives - including the Community Partnerships Division, Violence Prevention and Youth Development Grants, and the Youth Empowerment Unit –  the office is working collaboratively with the community to create and realize a sustainable future for Queens.
 
           </p>
           
