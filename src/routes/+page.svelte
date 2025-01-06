@@ -11,6 +11,7 @@
   import CommunityGrants from './../lib/components/communityGrants.svelte'
   import Map from './../lib/components/mapbox/map.svelte'
   import LineLayer from 'svelte-maplibre/LineLayer.svelte';
+  import ZoomRange from 'svelte-maplibre/ZoomRange.svelte';
   import Calendar from './chart.svelte?raw';
   import GeoJSON from 'svelte-maplibre/GeoJSON.svelte';
   import Calendar2 from './../lib/components/charts/calendar.svelte';
@@ -146,7 +147,7 @@
 
 
   <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4 mt-10">
-    Since 2021 the Queens DA's Office Has A Large and Active Presence In the Community
+    Since 2020 the Queens DA's Office Has A Large and Active Presence In the Community
   </h2>
 
 <TextBlock>

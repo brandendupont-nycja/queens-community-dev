@@ -6,7 +6,10 @@
   import Popup from 'svelte-maplibre/Popup.svelte';
   import { Legend } from 'layerchart';
   import MarkerData from './../mapbox/ce-data.csv'
+  import ZoomRange from 'svelte-maplibre/ZoomRange.svelte';
+  import { zoomTransition } from 'svelte-maplibre/expressions.js';
   import { scaleThreshold, scaleOrdinal } from 'd3-scale';
+  
   // geo data
   const queens = 'https://raw.githubusercontent.com/ebrelsford/geojson-examples/master/queens.geojson'
 
