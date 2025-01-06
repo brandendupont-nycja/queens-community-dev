@@ -12,7 +12,7 @@ const now = new Date();
 const firstDayOfYear = startOfYear(now);
 const lastDayOfYear = endOfYear(now);
 
-import data from "./df_count.csv"
+import data from "./df_count2.csv"
 
 
 function getRandomInteger(min: number, max: number, includeMax = true) {
