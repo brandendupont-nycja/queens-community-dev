@@ -133,7 +133,7 @@
 </Block>
 
 <h2 id="anchor-detention-release-changed" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
-  Attending Over ~2,000 Events Across Queens, The Community Partnerships Division Is Deeply Engaged in the Community
+  Attending Over ~3,000 Events Across Queens, The Community Partnerships Division Is Deeply Engaged in the Community
 </h2>
 
 
@@ -142,7 +142,7 @@
 
 <Block>
   <TextBlock>
-    Over the past four years, staff in the Office participated in over 2,000 public events - from community presentations on domestic violence at St. Mary & St. Antonios Coptic Orthodox Church in Ridgewood to community board meetings and precinct council meetings across the borough to community-based celebrations of Lunar New Year, Black History Month, Hispanic Heritage, Women’s History, Asian American Pacific Islander Heritage, Jewish American Heritage and more.
+    Over the past four years, staff in the Office participated in over 3,000 public events - from community presentations on domestic violence at St. Mary & St. Antonios Coptic Orthodox Church in Ridgewood to community board meetings and precinct council meetings across the borough to community-based celebrations of Lunar New Year, Black History Month, Hispanic Heritage, Women’s History, Asian American Pacific Islander Heritage, Jewish American Heritage and more.
   </TextBlock>
 
 
