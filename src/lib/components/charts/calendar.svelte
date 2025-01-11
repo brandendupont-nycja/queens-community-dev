@@ -124,9 +124,10 @@ const data3 = [{date: new Date("2024-01-02"), value:1 },
       </Svg>
 
       <Tooltip.Root let:data>
+        {#if data.value != null}
         <Tooltip.Header>{data.full_date}</Tooltip.Header>
   
-        {#if data.value != null}
+       
           <Tooltip.List>
             <Tooltip.Item
               label="Number of Events:"
@@ -135,8 +136,9 @@ const data3 = [{date: new Date("2024-01-02"), value:1 },
               valueAlign="right"
             />
           </Tooltip.List>
-        {/if}
+          {/if}
       </Tooltip.Root>
+     
       <Text
       value={"Data Source: Queen's Community Engagement Tracking Sheet "}
       textAnchor="end"
@@ -145,6 +147,7 @@ const data3 = [{date: new Date("2024-01-02"), value:1 },
       x=355
       y=555
     />
+   
 
 
  
