@@ -22,7 +22,7 @@
   ]);
 
     let currentStep;
-    const steps = [    "<p>This chart depicts defendant's that have been served with trespass notices under the Queens Merchants Business Improvement Program.</p>", "<p> We conducted an initial analysis of this program's effectiveness. To do so, we selected 174 individuals served with trespass notices who had been subject to the tresspass notice for at least up to one year. This gives us enough time to get a sense of arrest patterns under this program. </p>", 
+    const steps = [    "<p>This chart depicts defendant's that have been served with trespass notices under the Queens Merchants Business Improvement Program. With</p>", "<p> We conducted an initial analysis of this program's effectiveness. To do so, we selected 174 individuals served with trespass notices who had been subject to the tresspass notice for at least up to one year. This gives us enough time to get a sense of arrest patterns under this program. </p>", 
      "<p>We find that 87% of individuals have been served with trespass notices and are not arrested at that same location again. </p>",  "<p>Conversely, 13% are rearrested at the same location. Business's can now partner with law enforcement and the Queens DA's office to address recidivist's who continue to steal from the same location. </p>"];
 
   
@@ -218,9 +218,8 @@ Click the right or left arrows to view the many organizations the Queens DA's of
 </h2>
 
 <TextBlock>
-  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity. 
+  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024.
 </TextBlock>
-
 
 <TextBlock>
   <div class="mb-10 mt-10">
@@ -228,6 +227,19 @@ Click the right or left arrows to view the many organizations the Queens DA's of
     </script>
 
 </TextBlock>
+
+<TextBlock>
+ The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity. 
+</TextBlock>
+
+<TextBlock>
+  <div class="mb-10 mt-10">
+    <div style="min-height:176px" id="datawrapper-vis-nTHF3"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/nTHF3/embed.js" charset="utf-8" data-target="#datawrapper-vis-nTHF3"></script><noscript><img src="https://datawrapper.dwcdn.net/nTHF3/full.png" alt="" /></noscript></div>
+  </div>
+
+</TextBlock>
+
+
 
 
 
