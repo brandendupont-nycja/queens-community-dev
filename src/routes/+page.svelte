@@ -141,9 +141,7 @@
 
 <Block>
   
-<TextBlock>
-  <div style="min-height:813px" id="datawrapper-vis-4zCNi"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/4zCNi/embed.js" charset="utf-8" data-target="#datawrapper-vis-4zCNi"></script><noscript><img src="https://datawrapper.dwcdn.net/4zCNi/full.png" alt="" /></noscript></div>
-</TextBlock>
+
   <TextBlock>
     Over the past four years, staff in the Office participated in over 3,000 public events - from community presentations on domestic violence at St. Mary & St. Antonios Coptic Orthodox Church in Ridgewood to community board meetings and precinct council meetings across the borough to community-based celebrations of Lunar New Year, Black History Month, Hispanic Heritage, Women’s History, Asian American Pacific Islander Heritage, Jewish American Heritage and more.
   </TextBlock>
