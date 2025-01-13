@@ -221,7 +221,7 @@ Click the right or left arrows to view the many organizations the Queens DA's of
 </h2>
 
 <TextBlock>
-  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024.
+  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity. 
 </TextBlock>
 
 <TextBlock>
@@ -230,22 +230,6 @@ Click the right or left arrows to view the many organizations the Queens DA's of
     </script>
 
 </TextBlock>
-
-<TextBlock>
- The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity. 
-</TextBlock>
-
-<TextBlock>
-  <div class="mb-10 mt-10">
-    <div style="min-height:176px" id="datawrapper-vis-nTHF3"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/nTHF3/embed.js" charset="utf-8" data-target="#datawrapper-vis-nTHF3"></script><noscript><img src="https://datawrapper.dwcdn.net/nTHF3/full.png" alt="" /></noscript></div>
-  </div>
-
-</TextBlock>
-
-
-
-
-
 
 
 
