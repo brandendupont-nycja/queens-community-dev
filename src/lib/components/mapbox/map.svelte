@@ -27,7 +27,7 @@
 
 </script>
 
-<div class="max-w-[1000px] mx-auto mt-4 mb-20">
+<div class="max-w-[1000px] mx-auto mt-4 mb-20 pl-2 pr-2">
 <MapLibre
   style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
   class="relative aspect-[9/16] max-h-[70vh] w-full sm:aspect-video sm:max-h-full"
@@ -36,63 +36,28 @@
   standardControls
 >
 
-  <div class="absolute z-50 right-4 top-4 bg-white text-black h-[120px] w-[250px] border-2 border-black p-3">
-    <p class="font-semibold text-lg">Community Partnerships Division Event Map</p>
-    <div class="grid gap-6 mt-2">
-      <Legend
-        scale={scaleOrdinal(
-          [
-            "Represents a Community Event",
-          ],
-          [
-        "#00aeff",
-      ],
-        )}
-        title=""
-        variant="swatches"
-        classes={{ swatch: "" }}
-      />
+  <div class="absolute z-50 right-4 top-4 bg-black text-white h-[160px] w-[250px] border-2 border-black p-3">
+    <div class="border-t border-white mb-2"></div>
+    <p class="font-semibold text-lg ">Community Partnerships Division Event Map</p>
+    <div class="flex flex-row gap-3 items-center mt-6">
+      
+      <div class="rounded-full bg-main w-3 h-3 "></div>
+      <div class=" text-white  text-md mt-1">
+    Represents a Community Event 
+      </div>
     </div>
+
   </div>
 
 
 
 
-  <ZoomRange minzoom={zoomThreshold - 0.5}>
-    {@const fadeStates = zoomTransition(zoomThreshold - 1, 0.8, zoomThreshold + 0.5, 0)}
-    {@const fadeCountiesText = zoomTransition(zoomThreshold, 0.2, zoomThreshold + 0.5, 1)}
-  
-
-    <GeoJSON id="countyfips" data={nbh} >
-      <FillLayer
-      paint={{
-        'fill-color': [
-          'interpolate',
-          ['linear'],
-          // Population density
-          [ 'get', 'count'],
-          0,
-          '#0a0',
-          10,
-          '#a00',
-        ],
-        'fill-opacity': fadeStates, 
-      }}
-      
-      >
-      </FillLayer>
-    </GeoJSON>
-    
-  </ZoomRange>
-
-<ZoomRange>
-  {@const fadeCounties = zoomTransition(zoomThreshold - 0.9, 0, zoomThreshold + 0.5, 0.8)}
   {#each MarkerData as { Longitude, Latitude, Event, Location } }
   {@const lngLat = [Longitude,Latitude]}
   <Marker
     {lngLat}
     class="grid opacity-25 h-2 w-2 place-items-center rounded-full  bg-main text-black shadow-2xl focus:outline-2 focus:outline-black "
-    opacity={fadeCounties}
+    opacity={.8}
   >
     <Popup openOn="hover" offset={[0, -10]}>
       <div class="text-md font-semibold  max-w-[275px]">{Event}</div>
@@ -100,7 +65,7 @@
     </Popup>
   </Marker>
   {/each}
-</ZoomRange>
+
 
 
   <GeoJSON id="queens" data={queens} >
