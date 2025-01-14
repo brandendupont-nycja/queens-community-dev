@@ -43,7 +43,7 @@ const logo ="https://images.unsplash.com/photo-1649956726800-af1971584a5a?q=80&w
                <li class="flex flex-wrap max-w-sm" >
 
                  <dl class=" font-semibold xl:text-base  text-xs">
-                    The Queen's District Attorney's Office
+                  The Queens County District Attorney's Office
                    <dd>
 
                    </dd>
