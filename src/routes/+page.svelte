@@ -125,14 +125,14 @@
 
 
 <TextBlock>
-  Toward this goal, the Community Partnerships Division in the Queens County District Attorney’s Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens.  
+  Toward this goal, the Community Partnerships Division in the Queens County District Attorney’s Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens.
 </TextBlock>
 
 
 </Block>
 
 <h2 id="anchor-detention-release-changed" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
-  Attending Over ~3,000 Events Across Queens, The Community Partnerships Division Is Deeply Engaged in the Community
+  Attending Over ~3,000 Events Across Queens, the Community Partnerships Division Is Deeply Engaged in the Community
 </h2>
 
 <Map >
@@ -147,7 +147,7 @@
 
 
   <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4 mt-10">
-    Since 2020, the Queens DA's Office Has Had A Large and Active Presence In the Community
+    Since 2020, the Queens County DA's Office Has Had A Large and Active Presence In the Community
   </h2>
 
 <TextBlock>
@@ -164,10 +164,10 @@
   
   <div class="pt-10 ">
     <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[800px]">
-      Every Week of the Year the Queens DA's Office is in the Community
+      Every Week of the Year the Queens County DA's Office is in the Community
     </h2>
     <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[800px]">
-      The calendar shows daily events attended by the Queens County District Attorney’s Office Community Partnership Division.  It details the time commitment the Office invests in being accessible to the community.
+      The calendar shows daily events attended by the Queens County District Attorney’s Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
     <Calendar2 />
   </div>
@@ -179,7 +179,7 @@
 
 
     <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
-      The Queens DA's Office Invests Millions in Youth Development and Crime Prevention
+      The Queens County DA's Office Invests Millions in Youth Development and Crime Prevention
     </h2>
 <TextBlock>
   A prosecutor’s office has a role in the community that is broader than simply processing cases.  As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life.  In addition to engaging the community through community events, The Queens County District Attorney’s Office also supports the community through Violence Prevention and Youth Development Grants.

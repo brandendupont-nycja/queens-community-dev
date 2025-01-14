@@ -32,7 +32,7 @@ const logo ="https://images.unsplash.com/photo-1649956726800-af1971584a5a?q=80&w
             Across Queens, the DA Centers The Community in Public Safety
           </h2>
           <p class="text-gray-300 xl:text-base  text-sm">
-            The Queens County District Attorney’s Office seeks to re-imagine the relationship between the prosecutors’ office and the residents of Queens County by being an integral part of the community. Through numerous community-based initiatives - including the creation of the Community Partnerships Division, the Youth Empowerment Unit, and the distribution of Violence Prevention and Youth Development Grants – the Office is working collaboratively with the community to create and realize a sustainable future for Queens.
+            The Queens County District Attorney’s Office seeks to re-imagine the relationship between the prosecutor’s office and the residents of Queens County by being an integral part of the community. Through numerous community-based initiatives - including the creation of the Community Partnerships Division, the Youth Empowerment Unit, and the distribution of Violence Prevention and Youth Development Grants – the Office is working collaboratively with the community to create and realize a sustainable future for Queens.
 
           </p>
           
