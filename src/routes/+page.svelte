@@ -114,7 +114,7 @@
   
   <TextBlock>
     <div class="first-letter:text-7xl first-letter:text-black first-letter:font-sans first-letter:pr-1 first-letter:pb-1 first-letter:float-left ">
-      The first contact that an individual has with a prosecutor should not occur in a courtroom or during a crisis. It should happen in a welcoming environment—such as a community event—where individuals can learn about available resources and services that the prosecutors’ office has to offer. That means prosecutors getting out into the community, listening to citizens, and building long-term relationships. 
+      The first contact that an individual has with a prosecutor should not occur in a courtroom or during a crisis. It should happen in a welcoming environment—such as a community event—where individuals can learn about available resources and services that the prosecutor’s office has to offer. That means prosecutors getting out into the community, listening to citizens, and building long-term relationships.      
 </div>
 </TextBlock>
 
@@ -125,8 +125,7 @@
 
 
 <TextBlock>
-  Toward this goal, the Community Partnerships Division in the Queens District Attorney’s Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens. 
-  
+  Toward this goal, the Community Partnerships Division in the Queens County District Attorney’s Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens.  
 </TextBlock>
 
 
@@ -143,16 +142,16 @@
   
 
   <TextBlock>
-    Over the past four years, staff in the Office participated in over 3,000 public events - from community presentations on domestic violence at St. Mary & St. Antonios Coptic Orthodox Church in Ridgewood to community board meetings and precinct council meetings across the borough to community-based celebrations of Lunar New Year, Black History Month, Hispanic Heritage, Women’s History, Asian American Pacific Islander Heritage, Jewish American Heritage and more.
+    Over the past four years, staff in the Office participated in over 3,000 public events - from community presentations on domestic violence at St. Mary & St. Antonios Coptic Orthodox Church in Ridgewood, to community board meetings and precinct council meetings across the borough, to community-based celebrations of Lunar New Year, Black History Month, Hispanic Heritage, Women’s History, Asian American Pacific Islander Heritage, Jewish American Heritage and more.
   </TextBlock>
 
 
   <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4 mt-10">
-    Since 2020 the Queens DA's Office Has A Large and Active Presence In the Community
+    Since 2020, the Queens DA's Office Has Had A Large and Active Presence In the Community
   </h2>
 
 <TextBlock>
-  Nearly every day of the year the District Attorney’s Office is in the community, demonstrating its ongoing commitment to strengthening positive ties with citizens. Through this approach, the office has successfully engaged the Queens community, fostering an environment where residents feel empowered to reach out to the office not just for assistance with law enforcement-related issues.
+  Nearly every day of the year, the Queens County District Attorney’s Office is in the community, demonstrating its ongoing commitment to strengthening positive ties with citizens. Through this approach, the Office has successfully engaged the Queens community, fostering an environment where residents feel empowered to reach out to the Office for more than just assistance with law enforcement-related issues.
 </TextBlock>
 
 </Block>
@@ -165,10 +164,10 @@
   
   <div class="pt-10 ">
     <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[800px]">
-      Every week of the year the Queens DA's Office is in the community
+      Every Week of the Year the Queens DA's Office is in the Community
     </h2>
     <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[800px]">
-      The calendar shows daily events attended by the Queen's Community Partnership Division. And details the the time committment the office invests in being accessible to the community.
+      The calendar shows daily events attended by the Queens County District Attorney’s Office Community Partnership Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
     <Calendar2 />
   </div>
@@ -183,11 +182,11 @@
       The Queens DA's Office Invests Millions in Youth Development and Crime Prevention
     </h2>
 <TextBlock>
-  A prosecutor’s office has a broader role in the community than simply processing cases. As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life. In addition to engaging the community through through community events, The Queens District Attorney’s Office also supports the community through Violence Prevention and Youth Development Grants.
+  A prosecutor’s office has a role in the community that is broader than simply processing cases.  As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life.  In addition to engaging the community through community events, The Queens County District Attorney’s Office also supports the community through Violence Prevention and Youth Development Grants.
 </TextBlock>
 
 <TextBlock>
-  In 2024, the Office announced $2.75 million in funding for 34 community-based organizations for the second phase of the office's Community Youth Development and Crime Prevention Project (CYDCPP), which seeks to foster positive relationships between communities and law enforcement, reduce youth crime, improve young people's self-confidence, increase exposure to positive adult role models, and strengthen academic performance and school attendance. Since its inception in 2021, the program has provided 5.45 million in program funding for the community.
+  In 2024, the Office announced $2.75 million in funding for 34 community-based organizations for the second phase of the Office's Community Youth Development and Crime Prevention Project (CYDCPP), which seeks to foster positive relationships between communities and law enforcement, reduce youth crime, improve young people's self-confidence, increase exposure to positive adult role models, and strengthen academic performance and school attendance. Since its inception in 2021, the program has provided $5.45 million in program funding for the community.
 </TextBlock>
 
 
@@ -196,7 +195,7 @@
 </h2>
 
 <TextBlock>
-Click the right or left arrows to view the many organizations the Queens DA's office has supported.
+  Click the right or left arrows to view the many organizations the Queens County DA's office has supported.
 </TextBlock>
 
 
@@ -215,11 +214,11 @@ Click the right or left arrows to view the many organizations the Queens DA's of
 
 
 <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
-  Queen's Youth Empowerment Unit Is in Every School District
+  The Youth Empowerment Unit is in Every School District in Queens
 </h2>
 
 <TextBlock>
-  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity. 
+  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity.
 </TextBlock>
 
 <TextBlock>
