@@ -218,7 +218,7 @@
 </h2>
 
 <TextBlock>
-  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 10,000 young people across Queens County in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity.
+  A primary focus of the Office lies in supporting and encouraging youth. The Youth Empowerment Unit engaged over 27,452 young people across Queens County since 2022 in 2024. The Unit’s programs are designed to cultivate young minds, strengthening their ability to think critically and communicate with mastery, thereby empowering them to navigate challenges and obstacles with confidence and maturity.  Community members may contact the Queens County DA’s Office to obtain more information about various educational programs offered by the Office, including: the Student Advisory Council; Legal Explorers Program; Hope and Leadership Academy; Summer Internship Program; and Court Tours Program.  The Office provides trainings and presentations to youth on topics including: workforce readiness skills for careers in law and law enforcement; positive police interaction; building healthy teenage relationships; internet safety; bullying; hate crimes; human trafficking; raising the age; bail reform; and immigration policy.
 </TextBlock>
 
 <TextBlock>
