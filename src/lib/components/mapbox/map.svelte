@@ -27,12 +27,12 @@
 
 </script>
 
-<div class="max-w-[1000px] mx-auto mt-4 mb-20 pl-2 pr-2">
+<div class="max-w-[900px] mx-auto mt-4 mb-20 pl-2 pr-2">
 <MapLibre
   style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
   class="relative aspect-[9/16] max-h-[70vh] w-full sm:aspect-video sm:max-h-full"
   center={[-73.814817, 40.672054]}
-  zoom={10.1}
+  zoom={10.0}
   standardControls
 >
 

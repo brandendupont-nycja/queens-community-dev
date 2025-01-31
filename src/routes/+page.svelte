@@ -156,17 +156,12 @@
 
 </Block>
 
-<Block>
-
-  </Block>
-  
-  
   
   <div class="pt-10 ">
-    <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[800px]">
+    <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[850px]">
       Every Week of the Year the Queens County DA's Office is in the Community
     </h2>
-    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[800px]">
+    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[850px]">
       The calendar shows daily events attended by the Queens County District Attorney’s Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
     <Calendar2 />

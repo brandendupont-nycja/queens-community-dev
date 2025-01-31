@@ -3,8 +3,12 @@
 
 const authors = ["Patrick Griffin", 'Branden DuPont',"Don Stemen","Dave Olson","Amanda Ward", ]
 
-const credit ="Photo by: Josiah Gibbs"
-const logo ="https://images.unsplash.com/photo-1649956726800-af1971584a5a?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const credit ="Photo by: Queens County District Attorney"
+const logo3 ="https://live.staticflickr.com/65535/53180586213_c2b8352ee0_4k.jpg"
+const logo1 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
+const logo2 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
+const logo = "https://live.staticflickr.com/65535/53765406032_51920c548a_b.jpg"
+const logo4 ="https://live.staticflickr.com/65535/52958045238_8897b90922_b.jpg"
 
 //import logo from '$lib/assets/images/capitol.jpg';
 //import logo from '$lib/assets/images/pfa-report-image-2.png';
@@ -21,7 +25,7 @@ const logo ="https://images.unsplash.com/photo-1649956726800-af1971584a5a?q=80&w
       class=" w-full h-[200px] sm:hidden "
     />
     <div class="absolute bottom--6 right-2  ">
-    <div class="text-white text-[8px] floating-right sm:block"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
+    <div class="text-white text-[8px] floating-right sm:block"><a class="hover:underline hover:text-main" href="">{credit}</a></div>
   </div>
 </div>
       <div class="p-8 md:p-12   grid place-items-center">
