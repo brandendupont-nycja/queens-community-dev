@@ -16,10 +16,14 @@
   import GeoJSON from 'svelte-maplibre/GeoJSON.svelte';
   import Calendar2 from './../lib/components/charts/calendar.svelte';
   import viz from './viz.png';
+  
   const categoryColor = scaleOrdinal([
     '#ffbf00',
     '#00aeff',
   ]);
+
+
+    import youthImage from '$lib/assets/images/summer_internship.jpg';
 
     let currentStep;
     const steps = [    "<p>This chart depicts defendant's that have been served with trespass notices under the Queens Merchants Business Improvement Program. With</p>", "<p> We conducted an initial analysis of this program's effectiveness. To do so, we selected 174 individuals served with trespass notices who had been subject to the tresspass notice for at least up to one year. This gives us enough time to get a sense of arrest patterns under this program. </p>", 
@@ -184,6 +188,15 @@
   In 2024, the Office announced $2.75 million in funding for 34 community-based organizations for the second phase of the Office's Community Youth Development and Crime Prevention Project (CYDCPP), which seeks to foster positive relationships between communities and law enforcement, reduce youth crime, improve young people's self-confidence, increase exposure to positive adult role models, and strengthen academic performance and school attendance. Since its inception in 2021, the program has provided $5.45 million in program funding for the community.
 </TextBlock>
 
+</Block>
+
+<div class="mx-auto grid place-content-center mt-16 max-w-800px">
+  <img src={youthImage} alt='interns' height="700" width="800px" /> 
+  </div>
+  <div class="mx-auto grid place-content-center max-w-[780px] text-xs text-gray-600 mb-16">
+  </div>
+
+<Block>
 
 <h2 id="anchor-detention-release-changed" class="text-3xl font-semibold pt-4 pb-4">
   $5.45M Million Invested From 2021-2024
