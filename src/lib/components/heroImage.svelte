@@ -33,10 +33,10 @@ const logo4 ="https://live.staticflickr.com/65535/52958045238_8897b90922_b.jpg"
         <div class="sm:mt-10">
         <div class="mx-auto max-w-xl grid sm:text-left">
           <h2 class="font-mono  text-white  2xl:text-5xl lg:text-4xl  text-4xl font-sans mb-6 ">
-            Across Queens, the DA Centers The Community in Public Safety
+            Across Queens, the DA Centers the Community in Public Safety
           </h2>
           <p class="text-gray-300 xl:text-base  text-sm">
-            The Queens County District Attorney’s Office seeks to re-imagine the relationship between the prosecutor’s office and the residents of Queens County by being an integral part of the community. Through numerous community-based initiatives - including the creation of the Community Partnerships Division, the Youth Empowerment Unit, and the distribution of Violence Prevention and Youth Development Grants – the Office is working collaboratively with the community to create and realize a sustainable future for Queens.
+            The Queens County District Attorney’s Office seeks to re-imagine the relationship between the prosecutor’s office and the residents of Queens County by being an integral part of the community. Through numerous initiatives — including the creation of the Community Partnerships Division, the Youth Empowerment Unit, and the distribution of Violence Prevention and Youth Development Grants — the Office is working collaboratively across neighborhoods to create and realize a sustainable future for Queens.
 
           </p>
           
