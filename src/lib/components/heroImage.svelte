@@ -4,11 +4,14 @@
 const authors = ["Patrick Griffin", 'Branden DuPont',"Don Stemen","Dave Olson","Amanda Ward", ]
 
 const credit ="Photo by: Queens County District Attorney"
-const logo3 ="https://live.staticflickr.com/65535/53180586213_c2b8352ee0_4k.jpg"
-const logo1 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
+const logo1 ="https://live.staticflickr.com/65535/53180586213_c2b8352ee0_4k.jpg"
+const logo5 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
 const logo2 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
-const logo = "https://live.staticflickr.com/65535/53765406032_51920c548a_b.jpg"
+const logo3 = "https://live.staticflickr.com/65535/53765406032_51920c548a_b.jpg"
 const logo4 ="https://live.staticflickr.com/65535/52958045238_8897b90922_b.jpg"
+
+
+import logo from '$lib/assets/images/20230801_185355.jpg';
 
 //import logo from '$lib/assets/images/capitol.jpg';
 //import logo from '$lib/assets/images/pfa-report-image-2.png';
