@@ -160,7 +160,7 @@
     <h2 id="" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[850px]">
       Every Week of the Year the Queens County DA's Office is in the Community
     </h2>
-    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto s,max-w-[850px]">
+    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[850px]">
       The calendar shows daily events attended by the Queens County DA's Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
     <Calendar2 />
@@ -191,7 +191,6 @@
   <div class="mx-auto grid place-content-left max-w-[780px] text-xs text-gray-600 mb-16">
    Photo by: Queens DA's Office
   </div>
-
 <Block>
 
 <h2 id="anchor-detention-release-changed" class="text-3xl font-semibold pt-4 pb-4">
