@@ -133,7 +133,13 @@
 <h2 id="community-map" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
   Attending Over ~3,000 Events Across Queens, the Community Partnerships Division Is Deeply Engaged in the Community
 </h2>
-
+<div class="mx-auto max-w-[600px] flex flex-row align-items-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5" />
+  </svg>
+  
+  Move your cursor off the map to continue to read the report.
+</div>
 <Map >
 </Map>
 
