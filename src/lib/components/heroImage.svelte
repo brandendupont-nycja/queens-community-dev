@@ -3,7 +3,7 @@
 
 const authors = ["Patrick Griffin", 'Branden DuPont',"Don Stemen","Dave Olson","Amanda Ward", ]
 
-const credit ="Photo by: Queens County District Attorney"
+const credit ="Photo by: Queens County DA's Office"
 const logo1 ="https://live.staticflickr.com/65535/53180586213_c2b8352ee0_4k.jpg"
 const logo5 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
 const logo2 ="https://live.staticflickr.com/65535/52958044188_9e5026e0f8_b.jpg"
@@ -28,7 +28,7 @@ import logo from '$lib/assets/images/20230801_185355.jpg';
       class=" w-full h-[200px] sm:hidden "
     />
     <div class="absolute bottom--6 right-2  ">
-    <div class="text-white text-[8px] floating-right sm:block"><a class="hover:underline hover:text-main" href="">{credit}</a></div>
+    <div class="text-white text-[8px] floating-right sm:block"><div class="" >{credit}</div></div>
   </div>
 </div>
       <div class="p-8 md:p-12   grid place-items-center">
@@ -50,7 +50,7 @@ import logo from '$lib/assets/images/20230801_185355.jpg';
                <li class="flex flex-wrap max-w-sm" >
 
                  <dl class=" font-semibold xl:text-base  text-xs">
-                  The Queens County District Attorney's Office
+                  The Queens County DA's Office
                    <dd>
 
                    </dd>
@@ -64,7 +64,7 @@ import logo from '$lib/assets/images/20230801_185355.jpg';
                     <div class='mt-2'>
                       <dd class=" sm:text-sm  text-xs  text-white ">
                         <time >
-                          Report Published: 10-30-2024
+                          Report Published: 2/28/2025
                         </time>
                       </dd>
                     </div>
@@ -81,7 +81,7 @@ import logo from '$lib/assets/images/20230801_185355.jpg';
         class=" w-full   md:h-[450px] lg:h-[450px] xl:h-[600px] 2xl:h-[650px]"
       />
       <div class="absolute bottom-2 right-2  ">
-      <div class="text-white text-xs floating-right"><a class="hover:underline hover:text-main" href="https://unsplash.com/@drewjayadams">{credit}</a></div>
+      <div class="text-white text-xs floating-right"><div class="" >{credit}</div></div>
     </div>
       </div>
       

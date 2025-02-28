@@ -8,7 +8,7 @@
         <div class='mt-4'>
             <dd class=" sm:text-md text-sm text-white">
               <time>
-               Published: 6/9/2024
+               Published: 2/28/2025
               </time>
             </dd>
           </div>

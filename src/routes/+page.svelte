@@ -6,14 +6,9 @@
   import Block from './../lib/components/block.svelte';
   import TextBlock from './../lib/components/text.svelte';
   import PopOverMobile from './../lib/components/popoverMobile.svelte';
-  import Sidebar from './../lib/components/sidebar.svelte';
   import Menu from './../lib/components/collapsiblemenu.svelte';
   import CommunityGrants from './../lib/components/communityGrants.svelte'
   import Map from './../lib/components/mapbox/map.svelte'
-  import LineLayer from 'svelte-maplibre/LineLayer.svelte';
-  import ZoomRange from 'svelte-maplibre/ZoomRange.svelte';
-  import Calendar from './chart.svelte?raw';
-  import GeoJSON from 'svelte-maplibre/GeoJSON.svelte';
   import Calendar2 from './../lib/components/charts/calendar.svelte';
   import viz from './viz.png';
   
@@ -129,13 +124,13 @@
 
 
 <TextBlock>
-  Toward this goal, the Community Partnerships Division in the Queens County District Attorney’s Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens.
+  Toward this goal, the Community Partnerships Division in the Queens County DA's Office takes a multi-faceted approach to community engagement – providing opportunities for citizens to work collaboratively with the Office to make a positive contribution to Queens County. The Division reaches out to civic and non-profit organizations, develops programs, sponsors and co-sponsors events, and engages with every neighborhood throughout the borough of Queens.
 </TextBlock>
 
 
 </Block>
 
-<h2 id="anchor-detention-release-changed" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
+<h2 id="community-map" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
   Attending Over ~3,000 Events Across Queens, the Community Partnerships Division Is Deeply Engaged in the Community
 </h2>
 
@@ -150,23 +145,23 @@
   </TextBlock>
 
 
-  <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4 mt-10">
+  <h2 id="active-presence" class="text-4xl font-semibold pt-4 pb-4 mt-10">
     Since 2020, the Queens County DA's Office Has Had A Large and Active Presence In the Community
   </h2>
 
 <TextBlock>
-  Nearly every day of the year, the Queens County District Attorney’s Office is in the community, demonstrating its ongoing commitment to strengthening positive ties with citizens. Through this approach, the Office has successfully engaged the Queens community, fostering an environment where residents feel empowered to reach out to the Office for more than just assistance with law enforcement-related issues.
+  Nearly every day of the year, the Queens County DA's Office is in the community, demonstrating its ongoing commitment to strengthening positive ties with citizens. Through this approach, the Office has successfully engaged the Queens community, fostering an environment where residents feel empowered to reach out to the Office for more than just assistance with law enforcement-related issues.
 </TextBlock>
 
 </Block>
 
   
   <div class="pt-10 ">
-    <h2 id="anchor-detention-release-changed" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[850px]">
+    <h2 id="" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[850px]">
       Every Week of the Year the Queens County DA's Office is in the Community
     </h2>
-    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[850px]">
-      The calendar shows daily events attended by the Queens County District Attorney’s Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
+    <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto s,max-w-[850px]">
+      The calendar shows daily events attended by the Queens County DA's Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
     <Calendar2 />
   </div>
@@ -177,11 +172,11 @@
 <Block>
 
 
-    <h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
+    <h2 id="youth-dev-crim-prevention" class="text-4xl font-semibold pt-4 pb-4">
       The Queens County DA's Office Invests Millions in Youth Development and Crime Prevention
     </h2>
 <TextBlock>
-  A prosecutor’s office has a role in the community that is broader than simply processing cases.  As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life.  In addition to engaging the community through community events, the Queens County District Attorney’s Office also supports the community through Violence Prevention and Youth Development Grants.
+  A prosecutor’s office has a role in the community that is broader than simply processing cases.  As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life.  In addition to engaging the community through community events, the Queens County DA's Office also supports the community through Violence Prevention and Youth Development Grants.
 </TextBlock>
 
 <TextBlock>
@@ -193,7 +188,8 @@
 <div class="mx-auto grid place-content-center mt-16 max-w-800px">
   <img src={youthImage} alt='interns' height="700" width="800px" /> 
   </div>
-  <div class="mx-auto grid place-content-center max-w-[780px] text-xs text-gray-600 mb-16">
+  <div class="mx-auto grid place-content-left max-w-[780px] text-xs text-gray-600 mb-16">
+   Photo by: Queens DA's Office
   </div>
 
 <Block>
@@ -221,7 +217,7 @@
 
 
 
-<h2 id="anchor-detention-release-changed" class="text-4xl font-semibold pt-4 pb-4">
+<h2 id="youth-empowerment-unit" class="text-4xl font-semibold pt-4 pb-4">
   The Youth Empowerment Unit is in Every School District in Queens
 </h2>
 

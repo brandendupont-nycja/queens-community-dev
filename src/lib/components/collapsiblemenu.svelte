@@ -32,18 +32,23 @@
     <Collapsible.Content class="space-y-2 text-white overflow-y-auto">
     <div class="border-b border-t border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
         
-        <a href="#anchor-pfa-background" on:click={handleAnchorClick}>
-         Since 2021 the Queen's DA's Office Has A Large and Active Presence In the Community
+        <a href="#community-map" on:click={handleAnchorClick}>
+         Community Partnerships Division Attends Over 3,000 Events
         </a>
         </div>
      <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-        <a href="#anchor-loyola-evaluation" on:click={handleAnchorClick}>
-         The Queen's DA's Office Invested Over 2.7 Millions in Youth Development and Crime Prevention
+        <a href="#active-presence" on:click={handleAnchorClick}>
+         A Large and Active Presence In the Community
         </a>
      </div>
      <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
-      <a href="#anchor-prior-findings" on:click={handleAnchorClick}>
-         Queen's Hope and Leadership Program Is in Every School District
+      <a href="#youth-dev-crim-prevention" on:click={handleAnchorClick}>
+         The Queens County DA's Office Invests Millions in Youth Development and Crime Prevention
+      </a>
+   </div>
+   <div class="border-b border-white px-4 py-2  text-xs hover:text-yellow hover:text-underline">
+      <a href="#youth-empowerment-unit" on:click={handleAnchorClick}>
+         The Youth Empowerment Unit is in Every School District in Queens
       </a>
    </div>
     
