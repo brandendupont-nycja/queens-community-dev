@@ -9,7 +9,7 @@
     opts={{
      align: "start"
     }}
-    class=" mx-auto lg:max-w-[1100px]  2xl:max-w-[1400px] pt-10 pb-10 max-w-[200px]"
+    class=" mx-auto lg:max-w-[1100px]  2xl:max-w-[1400px] pt-10 sm:pb-10 max-w-[200px]"
    >
     <Carousel.Content class=" ">
      {#each data as i}

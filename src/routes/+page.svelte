@@ -169,7 +169,9 @@
     <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[850px]">
       The calendar shows daily events attended by the Queens County DA's Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
+    <div class="sm:block hidden">
     <Calendar2 />
+  </div>
   </div>
 
 

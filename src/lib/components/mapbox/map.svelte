@@ -27,7 +27,7 @@
 
 </script>
 
-<div class="max-w-[900px] mx-auto mt-4 mb-20 pl-2 pr-2">
+<div class="max-w-[900px] mx-auto mt-4 mb-20 sm:pl-2 sm:pr-2 pl-6 pr-6">
 <MapLibre
   style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
   class="relative aspect-[9/16] max-h-[70vh] w-full sm:aspect-video sm:max-h-full"
@@ -36,7 +36,7 @@
   standardControls
 >
 
-  <div class="absolute z-50 right-4 top-4 bg-black text-white h-[160px] w-[250px] border-2 border-black p-3">
+  <div class="absolute z-50 right-4 top-4 bg-black text-white h-[160px] w-[250px] border-2 border-black p-3 sm:block hidden">
     <div class="border-t border-white mb-2"></div>
     <p class="font-semibold text-lg ">Community Partnerships Division Event Map</p>
     <div class="flex flex-row gap-3 items-center mt-6">
