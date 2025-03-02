@@ -65,8 +65,19 @@
     </Popup>
   </Marker>
   {/each}
+  <Marker
+    lngLat={[-73.8707, 40.785]}
+    class="grid h-8 w-8 place-items-center rounded-full bg-black text-white shadow-2xl focus:outline-2 focus:outline-black"
+  >
+    <span> LGA </span>
+  </Marker>
 
-
+  <Marker
+    lngLat={[-73.790, 40.652]}
+    class="grid h-8 w-8 place-items-center rounded-full bg-black text-white shadow-2xl focus:outline-2 focus:outline-black"
+  >
+    <span> JFK </span>
+  </Marker>
 
   <GeoJSON id="queens" data={queens} >
     <LineLayer
