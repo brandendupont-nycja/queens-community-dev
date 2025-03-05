@@ -162,7 +162,7 @@
 
 
   <h2 id="active-presence" class="text-4xl font-semibold pt-4 pb-4 mt-10">
-    Since 2020, the Queens County DA's Office has had A Large and Active Presence in the Community
+    Since 2020, the Queens County DA's Office has had a Large and Active Presence in the Community
   </h2>
 
 <TextBlock>
