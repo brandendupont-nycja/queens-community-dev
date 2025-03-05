@@ -52,19 +52,7 @@
 
 
 
-  {#each MarkerData as { Longitude, Latitude, Event, Location } }
-  {@const lngLat = [Longitude,Latitude]}
-  <Marker
-    {lngLat}
-    class="grid opacity-25 h-2 w-2 place-items-center rounded-full  bg-main text-black shadow-2xl focus:outline-2 focus:outline-black "
-    opacity={.8}
-  >
-    <Popup openOn="hover" offset={[0, -10]}>
-      <div class="text-md font-semibold  max-w-[275px]">{Event}</div>
-      <div class="text-sm  max-w-[300px]">{Location}</div>
-    </Popup>
-  </Marker>
-  {/each}
+
   <Marker
     lngLat={[-73.8707, 40.785]}
     class="grid h-8 w-8 place-items-center rounded-full bg-black text-white shadow-2xl focus:outline-2 focus:outline-black"
