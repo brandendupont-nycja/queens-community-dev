@@ -10,6 +10,7 @@
   import type { FeatureCollection } from 'geojson';
   import ZoomRange from 'svelte-maplibre/ZoomRange.svelte';
   import { zoomTransition } from 'svelte-maplibre/expressions.js';
+  
   import { scaleThreshold, scaleOrdinal } from 'd3-scale';
     import { count } from 'd3-array';
   
@@ -52,7 +53,19 @@
 
 
 
-
+  {#each MarkerData as { Longitude, Latitude, Event, Location } }
+  {@const lngLat = [Longitude,Latitude]}
+  <Marker
+    {lngLat}
+    class="grid opacity-25 h-2 w-2 place-items-center rounded-full  bg-main text-black shadow-2xl focus:outline-2 focus:outline-black "
+    opacity={.8}
+  >
+    <Popup openOn="hover" offset={[0, -10]}>
+      <div class="text-md font-semibold  max-w-[275px]">{Event}</div>
+      <div class="text-sm  max-w-[300px]">{Location}</div>
+    </Popup>
+  </Marker>
+  {/each}
   <Marker
     lngLat={[-73.8707, 40.785]}
     class="grid h-8 w-8 place-items-center rounded-full bg-black text-white shadow-2xl focus:outline-2 focus:outline-black"
@@ -73,6 +86,8 @@
     paint={{ 'line-color': borderColor, 'line-width': 1 }}
   />
   </GeoJSON>
+
+  
 
 </MapLibre>
 </div>

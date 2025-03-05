@@ -10,8 +10,10 @@
   import CommunityGrants from './../lib/components/communityGrants.svelte'
   import Map from './../lib/components/mapbox/map.svelte'
   import Calendar2 from './../lib/components/charts/calendar.svelte';
-  import viz from './viz.png';
-  
+  import mobilemap from './mobile-map.png';
+  import MediaQuery from "../lib/components/mediaquery.svelte";
+  import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
+
   const categoryColor = scaleOrdinal([
     '#ffbf00',
     '#00aeff',
@@ -130,19 +132,27 @@
 
 </Block>
 
-<h2 id="community-map" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]">
-  Attending Over ~3,000 Events Across Queens, the Community Partnerships Division Is Deeply Engaged in the Community
+<h2 id="community-map" class="text-2xl mt-10 font-semibold pt-4 pb-4 mx-auto max-w-[600px]  ">
+  <div class="ml-2 mr-2 sm:ml-0 sm:mr-0">
+  Attending Over ~3,000 Events Across Queens, the Community Partnerships Division Is Deeply Engaged in the Community </div>
 </h2>
-<div class="mx-auto max-w-[600px] flex flex-row align-items-center gap-2">
+<div class="mx-auto max-w-[600px]  flex-row align-items-center gap-2 sm:flex hidden">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5" />
   </svg>
   
   Move your cursor off the map to continue to scroll through the report.
 </div>
+<div class="mx-auto max-w-[600px] flex flex-row align-items-center gap-2 sm:hidden block ml-2 mr-2">
+
+  
+  The interactive map is best viewed on a desktop screen.
+</div>
+<span class="sm:block hidden">
 <Map >
 </Map>
-
+</span>
+<img src={mobilemap} class="w-[300px] h-[435px] mx-auto sm:hidden block mb-6 mt-6" />
 <Block>
   
 
@@ -163,15 +173,22 @@
 
   
   <div class="pt-10 ">
-    <h2 id="" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[850px]">
+    <h2 id="" class="text-2xl font-semibold pt-4 pb-2 mx-auto max-w-[850px] ">
+      <div class="sm:mr-0 sm:ml-0 ml-2 mr-2">
       Every Week of the Year the Queens County DA's Office is in the Community
+      
     </h2>
     <div id="anchor-detention-release-changed" class="text-md pb-3  mx-auto max-w-[850px]">
+      <div class="sm:mr-0 sm:ml-0 ml-2 mr-2">
       The calendar shows daily events attended by the Queens County DA's Office Community Partnerships Division.  It details the time commitment the Office invests in being accessible to the community.
     </div>
-    <div class="sm:block hidden">
+    </div>
+    <ScrollArea
+    class=" whitespace-nowrap sm:rounded-md  sm:mx-auto sm:ml-0 ml-4 mr-4"
+    orientation="horizontal"
+  >
     <Calendar2 />
-  </div>
+    </ScrollArea >
   </div>
 
 
@@ -194,7 +211,7 @@
 </Block>
 
 <div class="mx-auto grid place-content-center mt-16 max-w-800px">
-  <img src={youthImage} alt='interns' height="700" width="800px" /> 
+  <img src={youthImage} alt='interns' class="sm:h-[600px]" /> 
   </div>
   <div class="mx-auto grid place-content-left max-w-[780px] text-xs text-gray-600 mb-16">
    Photo by: Queens DA's Office

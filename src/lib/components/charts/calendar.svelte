@@ -71,8 +71,8 @@ const data3 = [{date: new Date("2024-01-02"), value:1 },
   <div class="mx-auto max-w-[900px] mb-4">
 
 
-  <div class="sm:h-[650px] pl-4 rounded ">
-    <div class="grid gap-6 pb-6 pl-10">
+  <div class="h-[650px] pl-4 rounded sm:w-full w-[850px] sm:ml-0 ml-4 mr-4">
+    <div class="grid gap-6 pb-6 sm:pl-10 ">
       <Legend
         scale={scaleOrdinal(
           [
