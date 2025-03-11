@@ -13,6 +13,7 @@
   import mobilemap from './mobile-map.png';
   import MediaQuery from "../lib/components/mediaquery.svelte";
   import { ScrollArea } from "$lib/components/ui/scroll-area/index.js";
+  import calendarimage from "$lib/assets/images/calendar.png"
 
   const categoryColor = scaleOrdinal([
     '#ffbf00',
@@ -187,7 +188,9 @@
     class=" whitespace-nowrap sm:rounded-md  sm:mx-auto sm:ml-0 ml-4 mr-4"
     orientation="horizontal"
   >
-    <Calendar2 />
+  <div class="flex justify-center">
+    <img src={calendarimage}>
+  </div>
     </ScrollArea >
   </div>
 
