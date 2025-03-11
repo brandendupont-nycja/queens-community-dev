@@ -223,7 +223,7 @@
 </h2>
 
 <TextBlock>
-  Click the right or left arrows to view the many organizations the Queens County DA's office has supported.
+  Click the right or left arrows to view the many organizations the Queens County DA's Office has supported.
 </TextBlock>
 
 
