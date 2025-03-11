@@ -64,6 +64,8 @@ const data3 = [{date: new Date("2024-01-02"), value:1 },
 {date:new Date("2024-01-03"), value:2 } 
 ]
 
+console.log(data)
+
 </script>
 
   
