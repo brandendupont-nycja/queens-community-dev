@@ -24,7 +24,7 @@
 
     let currentStep;
     const steps = [    "<p>This chart depicts defendant's that have been served with trespass notices under the Queens Merchants Business Improvement Program. With</p>", "<p> We conducted an initial analysis of this program's effectiveness. To do so, we selected 174 individuals served with trespass notices who had been subject to the tresspass notice for at least up to one year. This gives us enough time to get a sense of arrest patterns under this program. </p>", 
-     "<p>We find that 87% of individuals have been served with trespass notices and are not arrested at that same location again. </p>",  "<p>Conversely, 13% are rearrested at the same location. Business's can now partner with law enforcement and the Queens DA's office to address recidivist's who continue to steal from the same location. </p>"];
+     "<p>We find that 87% of individuals have been served with trespass notices and are not arrested at that same location again. </p>",  "<p>Conversely, 13% are rearrested at the same location. Business's can now partner with law enforcement and the Queens DA's Office to address recidivist's who continue to steal from the same location. </p>"];
 
   
 
@@ -201,7 +201,7 @@
       The Queens County DA's Office Invests Millions in Youth Development and Crime Prevention
     </h2>
 <TextBlock>
-  A prosecutor’s office has a role in the community that is broader than simply processing cases.  As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life.  In addition to engaging the community through community events, the Queens County DA's Office also supports the community through Violence Prevention and Youth Development Grants.
+  A prosecutor’s Office has a role in the community that is broader than simply processing cases.  As an organization deeply rooted in its local community, the prosecutor’s office has an opportunity to use its human capital and resources to improve the long-term social, economic, and cultural well-being of the community - to act as a stabilizing force in civic life.  In addition to engaging the community through community events, the Queens County DA's Office also supports the community through Violence Prevention and Youth Development Grants.
 </TextBlock>
 
 <TextBlock>
